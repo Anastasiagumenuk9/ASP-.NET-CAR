@@ -1,0 +1,5 @@
+D:\3 курс\Net\Application\Application\Application\obj\Debug\netcoreapp2.1\Application.csprojAssemblyReference.cache
+D:\3 курс\Net\Application\Application\Application\obj\Debug\netcoreapp2.1\Application.RazorAssemblyInfo.cache
+D:\3 курс\Net\Application\Application\Application\obj\Debug\netcoreapp2.1\Application.RazorAssemblyInfo.cs
+D:\3 курс\Net\Application\Application\Application\obj\Debug\netcoreapp2.1\Application.AssemblyInfoInputs.cache
+D:\3 курс\Net\Application\Application\Application\obj\Debug\netcoreapp2.1\Application.AssemblyInfo.cs

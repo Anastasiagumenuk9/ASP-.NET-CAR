@@ -1,0 +1,10 @@
+D:\3 курс\Net\Application\Application\BAL\bin\Debug\netcoreapp2.1\BAL.deps.json
+D:\3 курс\Net\Application\Application\BAL\bin\Debug\netcoreapp2.1\BAL.runtimeconfig.json
+D:\3 курс\Net\Application\Application\BAL\bin\Debug\netcoreapp2.1\BAL.runtimeconfig.dev.json
+D:\3 курс\Net\Application\Application\BAL\bin\Debug\netcoreapp2.1\BAL.dll
+D:\3 курс\Net\Application\Application\BAL\bin\Debug\netcoreapp2.1\BAL.pdb
+D:\3 курс\Net\Application\Application\BAL\obj\Debug\netcoreapp2.1\BAL.AssemblyInfoInputs.cache
+D:\3 курс\Net\Application\Application\BAL\obj\Debug\netcoreapp2.1\BAL.AssemblyInfo.cs
+D:\3 курс\Net\Application\Application\BAL\obj\Debug\netcoreapp2.1\BAL.dll
+D:\3 курс\Net\Application\Application\BAL\obj\Debug\netcoreapp2.1\BAL.pdb
+D:\3 курс\Net\Application\Application\BAL\obj\Debug\netcoreapp2.1\BAL.csprojAssemblyReference.cache

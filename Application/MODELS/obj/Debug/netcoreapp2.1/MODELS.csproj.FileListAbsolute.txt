@@ -1,0 +1,8 @@
+D:\3 курс\Net\Application\Application\MODELS\bin\Debug\netcoreapp2.1\MODELS.deps.json
+D:\3 курс\Net\Application\Application\MODELS\bin\Debug\netcoreapp2.1\MODELS.dll
+D:\3 курс\Net\Application\Application\MODELS\bin\Debug\netcoreapp2.1\MODELS.pdb
+D:\3 курс\Net\Application\Application\MODELS\obj\Debug\netcoreapp2.1\MODELS.csprojAssemblyReference.cache
+D:\3 курс\Net\Application\Application\MODELS\obj\Debug\netcoreapp2.1\MODELS.AssemblyInfoInputs.cache
+D:\3 курс\Net\Application\Application\MODELS\obj\Debug\netcoreapp2.1\MODELS.AssemblyInfo.cs
+D:\3 курс\Net\Application\Application\MODELS\obj\Debug\netcoreapp2.1\MODELS.dll
+D:\3 курс\Net\Application\Application\MODELS\obj\Debug\netcoreapp2.1\MODELS.pdb
