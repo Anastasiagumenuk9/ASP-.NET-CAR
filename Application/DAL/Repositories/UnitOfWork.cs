@@ -30,7 +30,7 @@ namespace DAL.Repositories
             this.context = context;
         }
 
-        #region it was
+        #region EntityRepository
 
         public IGenericRepository<ApplicationUser> ApplicationUsers
         {

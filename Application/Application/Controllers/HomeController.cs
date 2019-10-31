@@ -9,6 +9,8 @@ using System.Security.Claims;
 
 namespace Application.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class HomeController : Controller
     {
        // [Authorize(Roles = "admin, user")]
