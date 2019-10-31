@@ -1,0 +1,947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="11" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsPropertyName="CarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CarDBConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CarsTableAdapter" GeneratorDataComponentClassName="CarsTableAdapter" Name="Cars" UserDataComponentName="CarsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.Cars" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Cars] WHERE (([Id] = @Original_Id) AND ([Price] = @Original_Price) AND ([Run] = @Original_Run) AND ([isFavourite] = @Original_isFavourite) AND ([Available] = @Original_Available) AND ([ColorId] = @Original_ColorId) AND ([CarTypeId] = @Original_CarTypeId) AND ([TransmissionId] = @Original_TransmissionId))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Price" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Price" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Run" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Run" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_isFavourite" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="isFavourite" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Available" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Available" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ColorId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ColorId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CarTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarTypeId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_TransmissionId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TransmissionId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Cars] ([Name], [ShortDesc], [LongDesc], [Price], [Run], [isFavourite], [Available], [ColorId], [CarTypeId], [TransmissionId]) VALUES (@Name, @ShortDesc, @LongDesc, @Price, @Run, @isFavourite, @Available, @ColorId, @CarTypeId, @TransmissionId);
+SELECT Id, Name, ShortDesc, LongDesc, Price, Run, isFavourite, Available, ColorId, CarTypeId, TransmissionId FROM Cars WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShortDesc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShortDesc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LongDesc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LongDesc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Price" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Price" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Run" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Run" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@isFavourite" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="isFavourite" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Available" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Available" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ColorId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ColorId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CarTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarTypeId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@TransmissionId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TransmissionId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Name, ShortDesc, LongDesc, Price, Run, isFavourite, Available, ColorId, CarTypeId, TransmissionId FROM dbo.Cars</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Cars] SET [Name] = @Name, [ShortDesc] = @ShortDesc, [LongDesc] = @LongDesc, [Price] = @Price, [Run] = @Run, [isFavourite] = @isFavourite, [Available] = @Available, [ColorId] = @ColorId, [CarTypeId] = @CarTypeId, [TransmissionId] = @TransmissionId WHERE (([Id] = @Original_Id) AND ([Price] = @Original_Price) AND ([Run] = @Original_Run) AND ([isFavourite] = @Original_isFavourite) AND ([Available] = @Original_Available) AND ([ColorId] = @Original_ColorId) AND ([CarTypeId] = @Original_CarTypeId) AND ([TransmissionId] = @Original_TransmissionId));
+SELECT Id, Name, ShortDesc, LongDesc, Price, Run, isFavourite, Available, ColorId, CarTypeId, TransmissionId FROM Cars WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShortDesc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShortDesc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LongDesc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LongDesc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Price" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Price" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Run" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Run" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@isFavourite" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="isFavourite" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Available" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Available" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ColorId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ColorId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CarTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarTypeId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@TransmissionId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TransmissionId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Price" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Price" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Run" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Run" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_isFavourite" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="isFavourite" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Available" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Available" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ColorId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ColorId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CarTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarTypeId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_TransmissionId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TransmissionId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="ShortDesc" DataSetColumn="ShortDesc" />
+              <Mapping SourceColumn="LongDesc" DataSetColumn="LongDesc" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+              <Mapping SourceColumn="Run" DataSetColumn="Run" />
+              <Mapping SourceColumn="isFavourite" DataSetColumn="isFavourite" />
+              <Mapping SourceColumn="Available" DataSetColumn="Available" />
+              <Mapping SourceColumn="ColorId" DataSetColumn="ColorId" />
+              <Mapping SourceColumn="CarTypeId" DataSetColumn="CarTypeId" />
+              <Mapping SourceColumn="TransmissionId" DataSetColumn="TransmissionId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CarTypesTableAdapter" GeneratorDataComponentClassName="CarTypesTableAdapter" Name="CarTypes" UserDataComponentName="CarTypesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.CarTypes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[CarTypes] WHERE (([Id] = @Original_Id))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[CarTypes] ([Name]) VALUES (@Name);
+SELECT Id, Name FROM CarTypes WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Name FROM dbo.CarTypes</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[CarTypes] SET [Name] = @Name WHERE (([Id] = @Original_Id));
+SELECT Id, Name FROM CarTypes WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CitiesTableAdapter" GeneratorDataComponentClassName="CitiesTableAdapter" Name="Cities" UserDataComponentName="CitiesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.Cities" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Cities] WHERE (([Id] = @Original_Id))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Cities] ([Name]) VALUES (@Name);
+SELECT Id, Name FROM Cities WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Name FROM dbo.Cities</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Cities] SET [Name] = @Name WHERE (([Id] = @Original_Id));
+SELECT Id, Name FROM Cities WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ColorsTableAdapter" GeneratorDataComponentClassName="ColorsTableAdapter" Name="Colors" UserDataComponentName="ColorsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.Colors" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Colors] WHERE (([Id] = @Original_Id))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Colors] ([Name]) VALUES (@Name);
+SELECT Id, Name FROM Colors WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Name FROM dbo.Colors</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Colors] SET [Name] = @Name WHERE (([Id] = @Original_Id));
+SELECT Id, Name FROM Colors WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LocationCarTableAdapter" GeneratorDataComponentClassName="LocationCarTableAdapter" Name="LocationCar" UserDataComponentName="LocationCarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.LocationCar" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[LocationCar] WHERE (([Id] = @Original_Id) AND ([CarId] = @Original_CarId) AND ([LocationId] = @Original_LocationId))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_LocationId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LocationId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[LocationCar] ([CarId], [LocationId]) VALUES (@CarId, @LocationId);
+SELECT Id, CarId, LocationId FROM LocationCar WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@LocationId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LocationId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, CarId, LocationId FROM dbo.LocationCar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[LocationCar] SET [CarId] = @CarId, [LocationId] = @LocationId WHERE (([Id] = @Original_Id) AND ([CarId] = @Original_CarId) AND ([LocationId] = @Original_LocationId));
+SELECT Id, CarId, LocationId FROM LocationCar WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@LocationId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LocationId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_LocationId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LocationId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="CarId" DataSetColumn="CarId" />
+              <Mapping SourceColumn="LocationId" DataSetColumn="LocationId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LocationsTableAdapter" GeneratorDataComponentClassName="LocationsTableAdapter" Name="Locations" UserDataComponentName="LocationsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.Locations" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Locations] WHERE (([Id] = @Original_Id) AND ([CityId] = @Original_CityId))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CityId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CityId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Locations] ([Name], [CityId]) VALUES (@Name, @CityId);
+SELECT Id, Name, CityId FROM Locations WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CityId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CityId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Name, CityId FROM dbo.Locations</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Locations] SET [Name] = @Name, [CityId] = @CityId WHERE (([Id] = @Original_Id) AND ([CityId] = @Original_CityId));
+SELECT Id, Name, CityId FROM Locations WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CityId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CityId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CityId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CityId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="CityId" DataSetColumn="CityId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OrdersTableAdapter" GeneratorDataComponentClassName="OrdersTableAdapter" Name="Orders" UserDataComponentName="OrdersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.Orders" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Orders] WHERE (([Id] = @Original_Id) AND ((@IsNull_CarId = 1 AND [CarId] IS NULL) OR ([CarId] = @Original_CarId)) AND ([IsConfirmed] = @Original_IsConfirmed) AND ([DataOrder] = @Original_DataOrder) AND ([DataConfirmed] = @Original_DataConfirmed) AND ((@IsNull_ApplicationUserId = 1 AND [ApplicationUserId] IS NULL) OR ([ApplicationUserId] = @Original_ApplicationUserId)) AND ([RequiredInformationId] = @Original_RequiredInformationId))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_IsConfirmed" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsConfirmed" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime2" Direction="Input" ParameterName="@Original_DataOrder" Precision="0" ProviderType="DateTime2" Scale="0" Size="0" SourceColumn="DataOrder" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime2" Direction="Input" ParameterName="@Original_DataConfirmed" Precision="0" ProviderType="DateTime2" Scale="0" Size="0" SourceColumn="DataConfirmed" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ApplicationUserId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_RequiredInformationId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RequiredInformationId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Orders] ([CarId], [IsConfirmed], [DataOrder], [DataConfirmed], [ApplicationUserId], [RequiredInformationId]) VALUES (@CarId, @IsConfirmed, @DataOrder, @DataConfirmed, @ApplicationUserId, @RequiredInformationId);
+SELECT Id, CarId, IsConfirmed, DataOrder, DataConfirmed, ApplicationUserId, RequiredInformationId FROM Orders WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@IsConfirmed" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsConfirmed" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime2" Direction="Input" ParameterName="@DataOrder" Precision="0" ProviderType="DateTime2" Scale="0" Size="0" SourceColumn="DataOrder" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime2" Direction="Input" ParameterName="@DataConfirmed" Precision="0" ProviderType="DateTime2" Scale="0" Size="0" SourceColumn="DataConfirmed" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@RequiredInformationId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RequiredInformationId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, CarId, IsConfirmed, DataOrder, DataConfirmed, ApplicationUserId, RequiredInformationId FROM dbo.Orders</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Orders] SET [CarId] = @CarId, [IsConfirmed] = @IsConfirmed, [DataOrder] = @DataOrder, [DataConfirmed] = @DataConfirmed, [ApplicationUserId] = @ApplicationUserId, [RequiredInformationId] = @RequiredInformationId WHERE (([Id] = @Original_Id) AND ((@IsNull_CarId = 1 AND [CarId] IS NULL) OR ([CarId] = @Original_CarId)) AND ([IsConfirmed] = @Original_IsConfirmed) AND ([DataOrder] = @Original_DataOrder) AND ([DataConfirmed] = @Original_DataConfirmed) AND ((@IsNull_ApplicationUserId = 1 AND [ApplicationUserId] IS NULL) OR ([ApplicationUserId] = @Original_ApplicationUserId)) AND ([RequiredInformationId] = @Original_RequiredInformationId));
+SELECT Id, CarId, IsConfirmed, DataOrder, DataConfirmed, ApplicationUserId, RequiredInformationId FROM Orders WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@IsConfirmed" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsConfirmed" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime2" Direction="Input" ParameterName="@DataOrder" Precision="0" ProviderType="DateTime2" Scale="0" Size="0" SourceColumn="DataOrder" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime2" Direction="Input" ParameterName="@DataConfirmed" Precision="0" ProviderType="DateTime2" Scale="0" Size="0" SourceColumn="DataConfirmed" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@RequiredInformationId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RequiredInformationId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_IsConfirmed" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsConfirmed" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime2" Direction="Input" ParameterName="@Original_DataOrder" Precision="0" ProviderType="DateTime2" Scale="0" Size="0" SourceColumn="DataOrder" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime2" Direction="Input" ParameterName="@Original_DataConfirmed" Precision="0" ProviderType="DateTime2" Scale="0" Size="0" SourceColumn="DataConfirmed" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ApplicationUserId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_RequiredInformationId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RequiredInformationId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="CarId" DataSetColumn="CarId" />
+              <Mapping SourceColumn="IsConfirmed" DataSetColumn="IsConfirmed" />
+              <Mapping SourceColumn="DataOrder" DataSetColumn="DataOrder" />
+              <Mapping SourceColumn="DataConfirmed" DataSetColumn="DataConfirmed" />
+              <Mapping SourceColumn="ApplicationUserId" DataSetColumn="ApplicationUserId" />
+              <Mapping SourceColumn="RequiredInformationId" DataSetColumn="RequiredInformationId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PhotosCarTableAdapter" GeneratorDataComponentClassName="PhotosCarTableAdapter" Name="PhotosCar" UserDataComponentName="PhotosCarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.PhotosCar" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[PhotosCar] WHERE (([Id] = @Original_Id) AND ([CarId] = @Original_CarId))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[PhotosCar] ([Name], [Paint], [CarId]) VALUES (@Name, @Paint, @CarId);
+SELECT Id, Name, Paint, CarId FROM PhotosCar WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Paint" Precision="0" ProviderType="VarBinary" Scale="0" Size="0" SourceColumn="Paint" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Name, Paint, CarId FROM dbo.PhotosCar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[PhotosCar] SET [Name] = @Name, [Paint] = @Paint, [CarId] = @CarId WHERE (([Id] = @Original_Id) AND ([CarId] = @Original_CarId));
+SELECT Id, Name, Paint, CarId FROM PhotosCar WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Paint" Precision="0" ProviderType="VarBinary" Scale="0" Size="0" SourceColumn="Paint" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CarId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CarId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Paint" DataSetColumn="Paint" />
+              <Mapping SourceColumn="CarId" DataSetColumn="CarId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PhotosUserTableAdapter" GeneratorDataComponentClassName="PhotosUserTableAdapter" Name="PhotosUser" UserDataComponentName="PhotosUserTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.PhotosUser" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[PhotosUser] WHERE (([Id] = @Original_Id) AND ((@IsNull_ApplicationUserId = 1 AND [ApplicationUserId] IS NULL) OR ([ApplicationUserId] = @Original_ApplicationUserId)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ApplicationUserId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[PhotosUser] ([Name], [Paint], [ApplicationUserId]) VALUES (@Name, @Paint, @ApplicationUserId);
+SELECT Id, Name, Paint, ApplicationUserId FROM PhotosUser WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Paint" Precision="0" ProviderType="VarBinary" Scale="0" Size="0" SourceColumn="Paint" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Name, Paint, ApplicationUserId FROM dbo.PhotosUser</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[PhotosUser] SET [Name] = @Name, [Paint] = @Paint, [ApplicationUserId] = @ApplicationUserId WHERE (([Id] = @Original_Id) AND ((@IsNull_ApplicationUserId = 1 AND [ApplicationUserId] IS NULL) OR ([ApplicationUserId] = @Original_ApplicationUserId)));
+SELECT Id, Name, Paint, ApplicationUserId FROM PhotosUser WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Paint" Precision="0" ProviderType="VarBinary" Scale="0" Size="0" SourceColumn="Paint" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ApplicationUserId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Paint" DataSetColumn="Paint" />
+              <Mapping SourceColumn="ApplicationUserId" DataSetColumn="ApplicationUserId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RequiredInformationTableAdapter" GeneratorDataComponentClassName="RequiredInformationTableAdapter" Name="RequiredInformation" UserDataComponentName="RequiredInformationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.RequiredInformation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[RequiredInformation] WHERE (([Id] = @Original_Id) AND ([Gender] = @Original_Gender) AND ([PaymentMethod] = @Original_PaymentMethod) AND ((@IsNull_ApplicationUserId = 1 AND [ApplicationUserId] IS NULL) OR ([ApplicationUserId] = @Original_ApplicationUserId)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Gender" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_PaymentMethod" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentMethod" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ApplicationUserId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[RequiredInformation] ([City], [Name], [Surame], [Address], [PostalCode], [Gender], [PhoneNumber], [PaymentMethod], [ApplicationUserId]) VALUES (@City, @Name, @Surame, @Address, @PostalCode, @Gender, @PhoneNumber, @PaymentMethod, @ApplicationUserId);
+SELECT Id, City, Name, Surame, Address, PostalCode, Gender, PhoneNumber, PaymentMethod, ApplicationUserId FROM RequiredInformation WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@City" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="City" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Surame" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Surame" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Address" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Address" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PostalCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PostalCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Gender" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PhoneNumber" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PhoneNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@PaymentMethod" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentMethod" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, City, Name, Surame, Address, PostalCode, Gender, PhoneNumber, PaymentMethod, ApplicationUserId FROM dbo.RequiredInformation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[RequiredInformation] SET [City] = @City, [Name] = @Name, [Surame] = @Surame, [Address] = @Address, [PostalCode] = @PostalCode, [Gender] = @Gender, [PhoneNumber] = @PhoneNumber, [PaymentMethod] = @PaymentMethod, [ApplicationUserId] = @ApplicationUserId WHERE (([Id] = @Original_Id) AND ([Gender] = @Original_Gender) AND ([PaymentMethod] = @Original_PaymentMethod) AND ((@IsNull_ApplicationUserId = 1 AND [ApplicationUserId] IS NULL) OR ([ApplicationUserId] = @Original_ApplicationUserId)));
+SELECT Id, City, Name, Surame, Address, PostalCode, Gender, PhoneNumber, PaymentMethod, ApplicationUserId FROM RequiredInformation WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@City" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="City" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Surame" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Surame" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Address" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Address" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PostalCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PostalCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Gender" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PhoneNumber" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PhoneNumber" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@PaymentMethod" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentMethod" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Gender" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_PaymentMethod" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentMethod" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ApplicationUserId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ApplicationUserId" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ApplicationUserId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="City" DataSetColumn="City" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Surame" DataSetColumn="Surame" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="PostalCode" DataSetColumn="PostalCode" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="PhoneNumber" DataSetColumn="PhoneNumber" />
+              <Mapping SourceColumn="PaymentMethod" DataSetColumn="PaymentMethod" />
+              <Mapping SourceColumn="ApplicationUserId" DataSetColumn="ApplicationUserId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TransmissionTableAdapter" GeneratorDataComponentClassName="TransmissionTableAdapter" Name="Transmission" UserDataComponentName="TransmissionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CarDBConnectionString ()" DbObjectName="CarDB.dbo.Transmission" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Transmission] WHERE (([Id] = @Original_Id))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Transmission] ([Name]) VALUES (@Name);
+SELECT Id, Name FROM Transmission WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Name FROM dbo.Transmission</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Transmission] SET [Name] = @Name WHERE (([Id] = @Original_Id));
+SELECT Id, Name FROM Transmission WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Cars" msprop:Generator_TableClassName="CarsDataTable" msprop:Generator_TableVarName="tableCars" msprop:Generator_TablePropName="Cars" msprop:Generator_RowDeletingName="CarsRowDeleting" msprop:Generator_RowChangingName="CarsRowChanging" msprop:Generator_RowEvHandlerName="CarsRowChangeEventHandler" msprop:Generator_RowDeletedName="CarsRowDeleted" msprop:Generator_UserTableName="Cars" msprop:Generator_RowChangedName="CarsRowChanged" msprop:Generator_RowEvArgName="CarsRowChangeEvent" msprop:Generator_RowClassName="CarsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShortDesc" msprop:Generator_ColumnVarNameInTable="columnShortDesc" msprop:Generator_ColumnPropNameInRow="ShortDesc" msprop:Generator_ColumnPropNameInTable="ShortDescColumn" msprop:Generator_UserColumnName="ShortDesc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LongDesc" msprop:Generator_ColumnVarNameInTable="columnLongDesc" msprop:Generator_ColumnPropNameInRow="LongDesc" msprop:Generator_ColumnPropNameInTable="LongDescColumn" msprop:Generator_UserColumnName="LongDesc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" type="xs:int" />
+              <xs:element name="Run" msprop:Generator_ColumnVarNameInTable="columnRun" msprop:Generator_ColumnPropNameInRow="Run" msprop:Generator_ColumnPropNameInTable="RunColumn" msprop:Generator_UserColumnName="Run" type="xs:int" />
+              <xs:element name="isFavourite" msprop:Generator_ColumnVarNameInTable="columnisFavourite" msprop:Generator_ColumnPropNameInRow="isFavourite" msprop:Generator_ColumnPropNameInTable="isFavouriteColumn" msprop:Generator_UserColumnName="isFavourite" type="xs:boolean" />
+              <xs:element name="Available" msprop:Generator_ColumnVarNameInTable="columnAvailable" msprop:Generator_ColumnPropNameInRow="Available" msprop:Generator_ColumnPropNameInTable="AvailableColumn" msprop:Generator_UserColumnName="Available" type="xs:boolean" />
+              <xs:element name="ColorId" msprop:Generator_ColumnVarNameInTable="columnColorId" msprop:Generator_ColumnPropNameInRow="ColorId" msprop:Generator_ColumnPropNameInTable="ColorIdColumn" msprop:Generator_UserColumnName="ColorId" type="xs:int" />
+              <xs:element name="CarTypeId" msprop:Generator_ColumnVarNameInTable="columnCarTypeId" msprop:Generator_ColumnPropNameInRow="CarTypeId" msprop:Generator_ColumnPropNameInTable="CarTypeIdColumn" msprop:Generator_UserColumnName="CarTypeId" type="xs:int" />
+              <xs:element name="TransmissionId" msprop:Generator_ColumnVarNameInTable="columnTransmissionId" msprop:Generator_ColumnPropNameInRow="TransmissionId" msprop:Generator_ColumnPropNameInTable="TransmissionIdColumn" msprop:Generator_UserColumnName="TransmissionId" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CarTypes" msprop:Generator_TableClassName="CarTypesDataTable" msprop:Generator_TableVarName="tableCarTypes" msprop:Generator_TablePropName="CarTypes" msprop:Generator_RowDeletingName="CarTypesRowDeleting" msprop:Generator_RowChangingName="CarTypesRowChanging" msprop:Generator_RowEvHandlerName="CarTypesRowChangeEventHandler" msprop:Generator_RowDeletedName="CarTypesRowDeleted" msprop:Generator_UserTableName="CarTypes" msprop:Generator_RowChangedName="CarTypesRowChanged" msprop:Generator_RowEvArgName="CarTypesRowChangeEvent" msprop:Generator_RowClassName="CarTypesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Cities" msprop:Generator_TableClassName="CitiesDataTable" msprop:Generator_TableVarName="tableCities" msprop:Generator_TablePropName="Cities" msprop:Generator_RowDeletingName="CitiesRowDeleting" msprop:Generator_RowChangingName="CitiesRowChanging" msprop:Generator_RowEvHandlerName="CitiesRowChangeEventHandler" msprop:Generator_RowDeletedName="CitiesRowDeleted" msprop:Generator_UserTableName="Cities" msprop:Generator_RowChangedName="CitiesRowChanged" msprop:Generator_RowEvArgName="CitiesRowChangeEvent" msprop:Generator_RowClassName="CitiesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Colors" msprop:Generator_TableClassName="ColorsDataTable" msprop:Generator_TableVarName="tableColors" msprop:Generator_TablePropName="Colors" msprop:Generator_RowDeletingName="ColorsRowDeleting" msprop:Generator_RowChangingName="ColorsRowChanging" msprop:Generator_RowEvHandlerName="ColorsRowChangeEventHandler" msprop:Generator_RowDeletedName="ColorsRowDeleted" msprop:Generator_UserTableName="Colors" msprop:Generator_RowChangedName="ColorsRowChanged" msprop:Generator_RowEvArgName="ColorsRowChangeEvent" msprop:Generator_RowClassName="ColorsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LocationCar" msprop:Generator_TableClassName="LocationCarDataTable" msprop:Generator_TableVarName="tableLocationCar" msprop:Generator_TablePropName="LocationCar" msprop:Generator_RowDeletingName="LocationCarRowDeleting" msprop:Generator_RowChangingName="LocationCarRowChanging" msprop:Generator_RowEvHandlerName="LocationCarRowChangeEventHandler" msprop:Generator_RowDeletedName="LocationCarRowDeleted" msprop:Generator_UserTableName="LocationCar" msprop:Generator_RowChangedName="LocationCarRowChanged" msprop:Generator_RowEvArgName="LocationCarRowChangeEvent" msprop:Generator_RowClassName="LocationCarRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="CarId" msprop:Generator_ColumnVarNameInTable="columnCarId" msprop:Generator_ColumnPropNameInRow="CarId" msprop:Generator_ColumnPropNameInTable="CarIdColumn" msprop:Generator_UserColumnName="CarId" type="xs:int" />
+              <xs:element name="LocationId" msprop:Generator_ColumnVarNameInTable="columnLocationId" msprop:Generator_ColumnPropNameInRow="LocationId" msprop:Generator_ColumnPropNameInTable="LocationIdColumn" msprop:Generator_UserColumnName="LocationId" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Locations" msprop:Generator_TableClassName="LocationsDataTable" msprop:Generator_TableVarName="tableLocations" msprop:Generator_TablePropName="Locations" msprop:Generator_RowDeletingName="LocationsRowDeleting" msprop:Generator_RowChangingName="LocationsRowChanging" msprop:Generator_RowEvHandlerName="LocationsRowChangeEventHandler" msprop:Generator_RowDeletedName="LocationsRowDeleted" msprop:Generator_UserTableName="Locations" msprop:Generator_RowChangedName="LocationsRowChanged" msprop:Generator_RowEvArgName="LocationsRowChangeEvent" msprop:Generator_RowClassName="LocationsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CityId" msprop:Generator_ColumnVarNameInTable="columnCityId" msprop:Generator_ColumnPropNameInRow="CityId" msprop:Generator_ColumnPropNameInTable="CityIdColumn" msprop:Generator_UserColumnName="CityId" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Orders" msprop:Generator_TableClassName="OrdersDataTable" msprop:Generator_TableVarName="tableOrders" msprop:Generator_TablePropName="Orders" msprop:Generator_RowDeletingName="OrdersRowDeleting" msprop:Generator_RowChangingName="OrdersRowChanging" msprop:Generator_RowEvHandlerName="OrdersRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdersRowDeleted" msprop:Generator_UserTableName="Orders" msprop:Generator_RowChangedName="OrdersRowChanged" msprop:Generator_RowEvArgName="OrdersRowChangeEvent" msprop:Generator_RowClassName="OrdersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="CarId" msprop:Generator_ColumnVarNameInTable="columnCarId" msprop:Generator_ColumnPropNameInRow="CarId" msprop:Generator_ColumnPropNameInTable="CarIdColumn" msprop:Generator_UserColumnName="CarId" type="xs:int" minOccurs="0" />
+              <xs:element name="IsConfirmed" msprop:Generator_ColumnVarNameInTable="columnIsConfirmed" msprop:Generator_ColumnPropNameInRow="IsConfirmed" msprop:Generator_ColumnPropNameInTable="IsConfirmedColumn" msprop:Generator_UserColumnName="IsConfirmed" type="xs:boolean" />
+              <xs:element name="DataOrder" msprop:Generator_ColumnVarNameInTable="columnDataOrder" msprop:Generator_ColumnPropNameInRow="DataOrder" msprop:Generator_ColumnPropNameInTable="DataOrderColumn" msprop:Generator_UserColumnName="DataOrder" type="xs:dateTime" />
+              <xs:element name="DataConfirmed" msprop:Generator_ColumnVarNameInTable="columnDataConfirmed" msprop:Generator_ColumnPropNameInRow="DataConfirmed" msprop:Generator_ColumnPropNameInTable="DataConfirmedColumn" msprop:Generator_UserColumnName="DataConfirmed" type="xs:dateTime" />
+              <xs:element name="ApplicationUserId" msprop:Generator_ColumnVarNameInTable="columnApplicationUserId" msprop:Generator_ColumnPropNameInRow="ApplicationUserId" msprop:Generator_ColumnPropNameInTable="ApplicationUserIdColumn" msprop:Generator_UserColumnName="ApplicationUserId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="450" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RequiredInformationId" msprop:Generator_ColumnVarNameInTable="columnRequiredInformationId" msprop:Generator_ColumnPropNameInRow="RequiredInformationId" msprop:Generator_ColumnPropNameInTable="RequiredInformationIdColumn" msprop:Generator_UserColumnName="RequiredInformationId" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PhotosCar" msprop:Generator_TableClassName="PhotosCarDataTable" msprop:Generator_TableVarName="tablePhotosCar" msprop:Generator_TablePropName="PhotosCar" msprop:Generator_RowDeletingName="PhotosCarRowDeleting" msprop:Generator_RowChangingName="PhotosCarRowChanging" msprop:Generator_RowEvHandlerName="PhotosCarRowChangeEventHandler" msprop:Generator_RowDeletedName="PhotosCarRowDeleted" msprop:Generator_UserTableName="PhotosCar" msprop:Generator_RowChangedName="PhotosCarRowChanged" msprop:Generator_RowEvArgName="PhotosCarRowChangeEvent" msprop:Generator_RowClassName="PhotosCarRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Paint" msprop:Generator_ColumnVarNameInTable="columnPaint" msprop:Generator_ColumnPropNameInRow="Paint" msprop:Generator_ColumnPropNameInTable="PaintColumn" msprop:Generator_UserColumnName="Paint" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CarId" msprop:Generator_ColumnVarNameInTable="columnCarId" msprop:Generator_ColumnPropNameInRow="CarId" msprop:Generator_ColumnPropNameInTable="CarIdColumn" msprop:Generator_UserColumnName="CarId" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PhotosUser" msprop:Generator_TableClassName="PhotosUserDataTable" msprop:Generator_TableVarName="tablePhotosUser" msprop:Generator_TablePropName="PhotosUser" msprop:Generator_RowDeletingName="PhotosUserRowDeleting" msprop:Generator_RowChangingName="PhotosUserRowChanging" msprop:Generator_RowEvHandlerName="PhotosUserRowChangeEventHandler" msprop:Generator_RowDeletedName="PhotosUserRowDeleted" msprop:Generator_UserTableName="PhotosUser" msprop:Generator_RowChangedName="PhotosUserRowChanged" msprop:Generator_RowEvArgName="PhotosUserRowChangeEvent" msprop:Generator_RowClassName="PhotosUserRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Paint" msprop:Generator_ColumnVarNameInTable="columnPaint" msprop:Generator_ColumnPropNameInRow="Paint" msprop:Generator_ColumnPropNameInTable="PaintColumn" msprop:Generator_UserColumnName="Paint" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ApplicationUserId" msprop:Generator_ColumnVarNameInTable="columnApplicationUserId" msprop:Generator_ColumnPropNameInRow="ApplicationUserId" msprop:Generator_ColumnPropNameInTable="ApplicationUserIdColumn" msprop:Generator_UserColumnName="ApplicationUserId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="450" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RequiredInformation" msprop:Generator_TableClassName="RequiredInformationDataTable" msprop:Generator_TableVarName="tableRequiredInformation" msprop:Generator_TablePropName="RequiredInformation" msprop:Generator_RowDeletingName="RequiredInformationRowDeleting" msprop:Generator_RowChangingName="RequiredInformationRowChanging" msprop:Generator_RowEvHandlerName="RequiredInformationRowChangeEventHandler" msprop:Generator_RowDeletedName="RequiredInformationRowDeleted" msprop:Generator_UserTableName="RequiredInformation" msprop:Generator_RowChangedName="RequiredInformationRowChanged" msprop:Generator_RowEvArgName="RequiredInformationRowChangeEvent" msprop:Generator_RowClassName="RequiredInformationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surame" msprop:Generator_ColumnVarNameInTable="columnSurame" msprop:Generator_ColumnPropNameInRow="Surame" msprop:Generator_ColumnPropNameInTable="SurameColumn" msprop:Generator_UserColumnName="Surame" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PostalCode" msprop:Generator_ColumnVarNameInTable="columnPostalCode" msprop:Generator_ColumnPropNameInRow="PostalCode" msprop:Generator_ColumnPropNameInTable="PostalCodeColumn" msprop:Generator_UserColumnName="PostalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" type="xs:int" />
+              <xs:element name="PhoneNumber" msprop:Generator_ColumnVarNameInTable="columnPhoneNumber" msprop:Generator_ColumnPropNameInRow="PhoneNumber" msprop:Generator_ColumnPropNameInTable="PhoneNumberColumn" msprop:Generator_UserColumnName="PhoneNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaymentMethod" msprop:Generator_ColumnVarNameInTable="columnPaymentMethod" msprop:Generator_ColumnPropNameInRow="PaymentMethod" msprop:Generator_ColumnPropNameInTable="PaymentMethodColumn" msprop:Generator_UserColumnName="PaymentMethod" type="xs:int" />
+              <xs:element name="ApplicationUserId" msprop:Generator_ColumnVarNameInTable="columnApplicationUserId" msprop:Generator_ColumnPropNameInRow="ApplicationUserId" msprop:Generator_ColumnPropNameInTable="ApplicationUserIdColumn" msprop:Generator_UserColumnName="ApplicationUserId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="450" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Transmission" msprop:Generator_TableClassName="TransmissionDataTable" msprop:Generator_TableVarName="tableTransmission" msprop:Generator_TablePropName="Transmission" msprop:Generator_RowDeletingName="TransmissionRowDeleting" msprop:Generator_RowChangingName="TransmissionRowChanging" msprop:Generator_RowEvHandlerName="TransmissionRowChangeEventHandler" msprop:Generator_RowDeletedName="TransmissionRowDeleted" msprop:Generator_UserTableName="Transmission" msprop:Generator_RowChangedName="TransmissionRowChanged" msprop:Generator_RowEvArgName="TransmissionRowChangeEvent" msprop:Generator_RowClassName="TransmissionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Cars" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="CarTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CarTypes" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Cities_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Cities" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Colors_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Colors" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="LocationCar_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LocationCar" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Locations_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Locations" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Orders_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Orders" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="PhotosCar_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PhotosCar" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="PhotosUser_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PhotosUser" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="RequiredInformation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RequiredInformation" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Transmission_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Transmission" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="CarTypes_Cars" msdata:parent="CarTypes" msdata:child="Cars" msdata:parentkey="Id" msdata:childkey="Id" msprop:Generator_UserChildTable="Cars" msprop:Generator_ChildPropName="GetCarsRows" msprop:Generator_UserRelationName="CarTypes_Cars" msprop:Generator_RelationVarName="relationCarTypes_Cars" msprop:Generator_UserParentTable="CarTypes" msprop:Generator_ParentPropName="CarTypesRow" />
+      <msdata:Relationship name="Cars_LocationCar" msdata:parent="Cars" msdata:child="LocationCar" msdata:parentkey="Id" msdata:childkey="Id" msprop:Generator_UserChildTable="LocationCar" msprop:Generator_ChildPropName="GetLocationCarRows" msprop:Generator_UserRelationName="Cars_LocationCar" msprop:Generator_ParentPropName="CarsRow" msprop:Generator_RelationVarName="relationCars_LocationCar" msprop:Generator_UserParentTable="Cars" />
+      <msdata:Relationship name="Colors_Cars" msdata:parent="Colors" msdata:child="Cars" msdata:parentkey="Id" msdata:childkey="Id" msprop:Generator_UserChildTable="Cars" msprop:Generator_ChildPropName="GetCarsRows" msprop:Generator_UserRelationName="Colors_Cars" msprop:Generator_RelationVarName="relationColors_Cars" msprop:Generator_UserParentTable="Colors" msprop:Generator_ParentPropName="ColorsRow" />
+      <msdata:Relationship name="Transmission_Cars" msdata:parent="Transmission" msdata:child="Cars" msdata:parentkey="Id" msdata:childkey="Id" msprop:Generator_UserChildTable="Cars" msprop:Generator_ChildPropName="GetCarsRows" msprop:Generator_UserRelationName="Transmission_Cars" msprop:Generator_RelationVarName="relationTransmission_Cars" msprop:Generator_UserParentTable="Transmission" msprop:Generator_ParentPropName="TransmissionRow" />
+      <msdata:Relationship name="Cities_Locations" msdata:parent="Cities" msdata:child="Locations" msdata:parentkey="Id" msdata:childkey="Id" msprop:Generator_UserChildTable="Locations" msprop:Generator_ChildPropName="GetLocationsRows" msprop:Generator_UserRelationName="Cities_Locations" msprop:Generator_ParentPropName="CitiesRow" msprop:Generator_RelationVarName="relationCities_Locations" msprop:Generator_UserParentTable="Cities" />
+      <msdata:Relationship name="Locations_LocationCar" msdata:parent="Locations" msdata:child="LocationCar" msdata:parentkey="Id" msdata:childkey="Id" msprop:Generator_UserChildTable="LocationCar" msprop:Generator_ChildPropName="GetLocationCarRows" msprop:Generator_UserRelationName="Locations_LocationCar" msprop:Generator_RelationVarName="relationLocations_LocationCar" msprop:Generator_UserParentTable="Locations" msprop:Generator_ParentPropName="LocationsRow" />
+      <msdata:Relationship name="Cars_PhotosCar" msdata:parent="Cars" msdata:child="PhotosCar" msdata:parentkey="Id" msdata:childkey="Id" msprop:Generator_UserChildTable="PhotosCar" msprop:Generator_ChildPropName="GetPhotosCarRows" msprop:Generator_UserRelationName="Cars_PhotosCar" msprop:Generator_ParentPropName="CarsRow" msprop:Generator_RelationVarName="relationCars_PhotosCar" msprop:Generator_UserParentTable="Cars" />
+      <msdata:Relationship name="Orders_RequiredInformation" msdata:parent="Orders" msdata:child="RequiredInformation" msdata:parentkey="Id" msdata:childkey="Id" msprop:Generator_UserChildTable="RequiredInformation" msprop:Generator_ChildPropName="GetRequiredInformationRows" msprop:Generator_UserRelationName="Orders_RequiredInformation" msprop:Generator_ParentPropName="OrdersRow" msprop:Generator_RelationVarName="relationOrders_RequiredInformation" msprop:Generator_UserParentTable="Orders" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
