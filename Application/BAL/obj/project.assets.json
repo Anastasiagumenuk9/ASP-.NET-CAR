@@ -12594,11 +12594,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\3 курс\\Net\\Application\\Application\\BAL\\BAL.csproj",
+      "projectUniqueName": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\BAL.csproj",
       "projectName": "BAL",
-      "projectPath": "D:\\3 курс\\Net\\Application\\Application\\BAL\\BAL.csproj",
+      "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\BAL.csproj",
       "packagesPath": "C:\\Users\\anast\\.nuget\\packages\\",
-      "outputPath": "D:\\3 курс\\Net\\Application\\Application\\BAL\\obj\\",
+      "outputPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12617,8 +12617,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\3 курс\\Net\\Application\\Application\\MODELS\\MODELS.csproj": {
-              "projectPath": "D:\\3 курс\\Net\\Application\\Application\\MODELS\\MODELS.csproj"
+            "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj": {
+              "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj"
             }
           }
         }

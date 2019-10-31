@@ -12360,11 +12360,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\3 курс\\Net\\Application\\Application\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\3 курс\\Net\\Application\\Application\\DAL\\DAL.csproj",
+      "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\anast\\.nuget\\packages\\",
-      "outputPath": "D:\\3 курс\\Net\\Application\\Application\\DAL\\obj\\",
+      "outputPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12383,8 +12383,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\3 курс\\Net\\Application\\Application\\MODELS\\MODELS.csproj": {
-              "projectPath": "D:\\3 курс\\Net\\Application\\Application\\MODELS\\MODELS.csproj"
+            "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj": {
+              "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj"
             }
           }
         }

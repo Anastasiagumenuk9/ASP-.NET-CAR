@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\3 курс\\Net\\Application\\Application\\MODELS\\MODELS.csproj": {}
+    "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj": {}
   },
   "projects": {
-    "D:\\3 курс\\Net\\Application\\Application\\MODELS\\MODELS.csproj": {
+    "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\3 курс\\Net\\Application\\Application\\MODELS\\MODELS.csproj",
+        "projectUniqueName": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj",
         "projectName": "MODELS",
-        "projectPath": "D:\\3 курс\\Net\\Application\\Application\\MODELS\\MODELS.csproj",
+        "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj",
         "packagesPath": "C:\\Users\\anast\\.nuget\\packages\\",
-        "outputPath": "D:\\3 курс\\Net\\Application\\Application\\MODELS\\obj\\",
+        "outputPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
