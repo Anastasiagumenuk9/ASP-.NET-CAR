@@ -18,7 +18,6 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\bin\Debug\netcoreapp2
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\bin\Debug\netcoreapp2.2\BAL.pdb
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\bin\Debug\netcoreapp2.2\MODELS.dll
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\bin\Debug\netcoreapp2.2\MODELS.pdb
-D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2.2\BAL.csprojAssemblyReference.cache
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2.2\BAL.AssemblyInfoInputs.cache
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2.2\BAL.AssemblyInfo.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2.2\BAL.csproj.CopyComplete
