@@ -23,3 +23,4 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2.2\BAL.csproj.CopyComplete
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2.2\BAL.dll
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2.2\BAL.pdb
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2.2\BAL.csprojAssemblyReference.cache

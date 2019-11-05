@@ -34,6 +34,7 @@ namespace Application
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -85,6 +86,7 @@ namespace Application
             var token = Configuration.GetSection("tokenManagement").Get<TokenManagement>();
             var secret = Encoding.ASCII.GetBytes(token.Secret);
 
+
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -96,13 +98,16 @@ namespace Application
                 x.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(secret),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(token.Secret)),
+                    ValidIssuer = token.Issuer,
+                    ValidAudience = token.Audience,
                     ValidateIssuer = false,
                     ValidateAudience = false
                 };
             });
 
-            
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -116,7 +121,7 @@ namespace Application
             }
             else
             {
-               // app.UseExceptionHandler("/Home/Error");
+                // app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
 
@@ -131,5 +136,6 @@ namespace Application
 
             app.UseMvc();
         }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MODELS.Token;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -8,7 +9,6 @@ namespace BAL.Interfaces
 {
     public interface IAuthenticateManager
     {
-        string GenerateToken(ClaimsIdentity identity);
-        Task<ClaimsIdentity> GetIdentity(string userName, string password);
+        bool IsAuthenticated(TokenRequest request, out string token);
     }
 }
