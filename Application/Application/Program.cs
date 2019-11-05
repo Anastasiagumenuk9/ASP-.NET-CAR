@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-
+using MODELS.DB;
 
 namespace Application
 {
@@ -24,8 +24,10 @@ namespace Application
                 var serviceProvider = scope.ServiceProvider;
                 try
                 {
-                  
-                   
+                    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+                    DBInitializer.SeedData(roleManager);
+
                 }
                 catch
                 {
