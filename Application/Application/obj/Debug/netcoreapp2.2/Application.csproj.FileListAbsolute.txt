@@ -45,7 +45,6 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\net
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\Application.Views.pdb
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\MODELS.dll
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\MODELS.pdb
-D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.RazorAssemblyInfo.cache
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.RazorAssemblyInfo.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfoInputs.cache
@@ -69,3 +68,5 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\net
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.csproj.CopyComplete
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.dll
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.pdb
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Cars\CarIndex.cshtml.g.cs

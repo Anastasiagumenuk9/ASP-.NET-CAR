@@ -1,0 +1,14 @@
+﻿@using MODELS.ViewModels;
+@model IEnumerable<CarViewModel>
+
+@foreach (var item in Model)
+{
+    <h4>
+        @Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)
+    </h4>
+    <h4>
+        @Html.DisplayNameFor(model => model.Price) : @Html.DisplayFor(modelItem => item.Price)
+    </h4>
+   
+}
+
