@@ -9,6 +9,7 @@ namespace BAL.Interfaces
 {
     public interface IAuthenticateManager
     {
-        bool IsAuthenticated(TokenRequest request, out string token);
+        string GenerateToken(ClaimsIdentity identity);
+        Task<ClaimsIdentity> GetIdentity(string userName, string password);
     }
 }
