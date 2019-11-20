@@ -7,12 +7,15 @@ using MODELS.DB;
 
 namespace Application.Controllers
 {
-    [Route("[controller]/[action]")]
+   
+    [Route("api/Car")]
+    [ApiController]
     public class CarController : Controller
     {
         DataContext db;
 
         [HttpGet]
+
         public ActionResult Index()
         {
             var allcars = db.Cars.ToList<Car>();

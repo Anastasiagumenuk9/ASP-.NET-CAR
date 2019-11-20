@@ -17,4 +17,3 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\MODELS\obj\Debug\netcorea
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\MODELS\obj\Debug\netcoreapp2.2\MODELS.AssemblyInfo.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\MODELS\obj\Debug\netcoreapp2.2\MODELS.dll
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\MODELS\obj\Debug\netcoreapp2.2\MODELS.pdb
-D:\3 курс\Net\Application\ASP-.NET-CAR\Application\MODELS\obj\Debug\netcoreapp2.2\MODELS.csprojAssemblyReference.cache
