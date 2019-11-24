@@ -1,5 +1,5 @@
 ﻿{
-  "$schema\": \"http": null, json.schemastore.org/launchsettings.json",
+  "$schema\": \"http": null, //json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,

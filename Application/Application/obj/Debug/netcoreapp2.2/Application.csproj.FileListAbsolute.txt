@@ -68,5 +68,6 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\net
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.csproj.CopyComplete
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.dll
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.pdb
-D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Cars\CarIndex.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Cars\Index.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache

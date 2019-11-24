@@ -67,11 +67,7 @@ namespace Application
                 options.User.RequireUniqueEmail = true;
             });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddRazorPagesOptions(options =>
-            {
-                options.Conventions.AuthorizeFolder("")
-                options.Conventions.AuthorizePage("");
-            });
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
           
 
