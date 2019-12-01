@@ -20,7 +20,7 @@ namespace Application.Controllers
         {
         }
         [HttpGet]
-        public IActionResult Register()
+        public IActionResult Login()
         {
             return View();
         }
@@ -34,11 +34,8 @@ namespace Application.Controllers
         //    }
         //    return View(model);
         //}
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return View();
-        }
+        
+       
         //[HttpPost]
         //[ValidateAntiForgeryToken]
         //public async Task<IActionResult> Login(LoginViewModel model)
