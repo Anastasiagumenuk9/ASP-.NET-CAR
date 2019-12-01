@@ -19,6 +19,7 @@ namespace Application.Controllers
         public AccountController()
         {
         }
+
         [HttpGet]
         public IActionResult Login()
         {
