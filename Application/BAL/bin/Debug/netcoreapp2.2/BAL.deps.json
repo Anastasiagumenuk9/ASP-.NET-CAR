@@ -10,6 +10,10 @@
         "dependencies": {
           "AutoMapper": "9.0.0",
           "JavaScriptEngineSwitcher.ChakraCore": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": "3.1.0",
           "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": "2.2.0",
           "MODELS": "1.0.0",
           "Microsoft.AspNet.Mvc": "5.0.0",
@@ -57,6 +61,42 @@
         "resources": {
           "lib/netcoreapp2.1/ru-ru/JavaScriptEngineSwitcher.ChakraCore.resources.dll": {
             "locale": "ru-ru"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64/3.1.0": {
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libChakraCore.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64/3.1.0": {
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libChakraCore.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64/3.1.0": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/ChakraCore.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.11.8.0"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86/3.1.0": {
+        "runtimeTargets": {
+          "runtimes/win-x86/native/ChakraCore.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.11.8.0"
           }
         }
       },
@@ -3451,6 +3491,10 @@
       "MODELS/1.0.0": {
         "dependencies": {
           "JavaScriptEngineSwitcher.ChakraCore": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": "3.1.0",
           "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": "2.2.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
@@ -3489,6 +3533,34 @@
       "sha512": "sha512-NmSWAmcnXPzm2wNU2EovRsSOSkdDtQgtzzRPRVXMYxlQdN6Jv9ZuFHIzcv2lFCr7DCGZbsnj+0A3r0GjEkFb5Q==",
       "path": "javascriptengineswitcher.chakracore/3.1.0",
       "hashPath": "javascriptengineswitcher.chakracore.3.1.0.nupkg.sha512"
+    },
+    "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xoOgQu4QhOMc4UomFyfhZMstk0coCkJlDdI5ICwHdoHrY9GjT8qjix6MTfOPMCFmqZ5P8V8aK1dPJbP4FPpTBA==",
+      "path": "javascriptengineswitcher.chakracore.native.linux-x64/3.1.0",
+      "hashPath": "javascriptengineswitcher.chakracore.native.linux-x64.3.1.0.nupkg.sha512"
+    },
+    "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vPNpW77gm/GwmOPdeWvyrp8vwUa4BEFtJeZxHn4RwUjelZXi1Dhd8CAbJn8Ai38QY/Z94oEfrMYLvmp/kDoKjg==",
+      "path": "javascriptengineswitcher.chakracore.native.osx-x64/3.1.0",
+      "hashPath": "javascriptengineswitcher.chakracore.native.osx-x64.3.1.0.nupkg.sha512"
+    },
+    "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jSP2EqeTYldBsHVYg3/YXB7Khj/GE+SyPHqAx3Zl6YY+jy8I9ycBRUeE+frxPgAx5IUgZ1U91KW+UOM5Ck+h8g==",
+      "path": "javascriptengineswitcher.chakracore.native.win-x64/3.1.0",
+      "hashPath": "javascriptengineswitcher.chakracore.native.win-x64.3.1.0.nupkg.sha512"
+    },
+    "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-35S9xg7CV1obZ5nWD0tqvzABHTuCLIVF68qwPkC6Tz95a2j4pTlNidBWJ1xrXzLq+WoPjKP/zcWIS46kPRMf5g==",
+      "path": "javascriptengineswitcher.chakracore.native.win-x86/3.1.0",
+      "hashPath": "javascriptengineswitcher.chakracore.native.win-x86.3.1.0.nupkg.sha512"
     },
     "JavaScriptEngineSwitcher.Core/3.1.0": {
       "type": "package",

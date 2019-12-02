@@ -29,15 +29,45 @@
           }
         }
       },
+      "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64/3.1.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libChakraCore.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64/3.1.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libChakraCore.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
       "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64/3.1.0": {
         "type": "package",
         "build": {
-          "build/_._": {}
+          "build/JavaScriptEngineSwitcher.ChakraCore.Native.win-x64.props": {}
         },
         "runtimeTargets": {
           "runtimes/win-x64/native/ChakraCore.dll": {
             "assetType": "native",
             "rid": "win-x64"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86/3.1.0": {
+        "type": "package",
+        "build": {
+          "build/JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x86/native/ChakraCore.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
           }
         }
       },
@@ -2986,12 +3016,12 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
-      "React.AspNet/5.0.0": {
+      "React.AspNet/5.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.0.0",
-          "React.AspNet.Middleware": "5.0.0",
-          "React.Core": "5.0.0"
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
+          "React.AspNet.Middleware": "5.1.1",
+          "React.Core": "5.1.1"
         },
         "compile": {
           "lib/netstandard2.0/React.AspNet.dll": {}
@@ -3000,15 +3030,15 @@
           "lib/netstandard2.0/React.AspNet.dll": {}
         }
       },
-      "React.AspNet.Middleware/5.0.0": {
+      "React.AspNet.Middleware/5.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.0",
-          "Microsoft.AspNetCore.StaticFiles": "2.0.0",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.StaticFiles": "2.2.0",
           "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0",
-          "React.Core": "5.0.0"
+          "React.Core": "5.1.1"
         },
         "compile": {
           "lib/netstandard2.0/React.AspNet.Middleware.dll": {}
@@ -3017,12 +3047,12 @@
           "lib/netstandard2.0/React.AspNet.Middleware.dll": {}
         }
       },
-      "React.Core/5.0.0": {
+      "React.Core/5.1.1": {
         "type": "package",
         "dependencies": {
           "JSPool": "4.0.0",
           "JavaScriptEngineSwitcher.Core": "3.1.0",
-          "Microsoft.Extensions.DependencyModel": "2.0.4",
+          "Microsoft.Extensions.DependencyModel": "2.1.0",
           "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
@@ -4927,12 +4957,15 @@
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "JavaScriptEngineSwitcher.ChakraCore": "3.0.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": "3.1.0",
           "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": "3.1.0",
           "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": "2.2.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
-          "React.AspNet": "5.0.0"
+          "React.AspNet": "5.1.1"
         },
         "compile": {
           "bin/placeholder/MODELS.dll": {}
@@ -4998,6 +5031,36 @@
         "readme.txt"
       ]
     },
+    "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64/3.1.0": {
+      "sha512": "xoOgQu4QhOMc4UomFyfhZMstk0coCkJlDdI5ICwHdoHrY9GjT8qjix6MTfOPMCFmqZ5P8V8aK1dPJbP4FPpTBA==",
+      "type": "package",
+      "path": "javascriptengineswitcher.chakracore.native.linux-x64/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "chakra-core-license.txt",
+        "javascriptengineswitcher.chakracore.native.linux-x64.3.1.0.nupkg.sha512",
+        "javascriptengineswitcher.chakracore.native.linux-x64.nuspec",
+        "readme.txt",
+        "runtimes/linux-x64/native/libChakraCore.so"
+      ]
+    },
+    "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64/3.1.0": {
+      "sha512": "vPNpW77gm/GwmOPdeWvyrp8vwUa4BEFtJeZxHn4RwUjelZXi1Dhd8CAbJn8Ai38QY/Z94oEfrMYLvmp/kDoKjg==",
+      "type": "package",
+      "path": "javascriptengineswitcher.chakracore.native.osx-x64/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "chakra-core-license.txt",
+        "javascriptengineswitcher.chakracore.native.osx-x64.3.1.0.nupkg.sha512",
+        "javascriptengineswitcher.chakracore.native.osx-x64.nuspec",
+        "readme.txt",
+        "runtimes/osx-x64/native/libChakraCore.dylib"
+      ]
+    },
     "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64/3.1.0": {
       "sha512": "jSP2EqeTYldBsHVYg3/YXB7Khj/GE+SyPHqAx3Zl6YY+jy8I9ycBRUeE+frxPgAx5IUgZ1U91KW+UOM5Ck+h8g==",
       "type": "package",
@@ -5013,6 +5076,25 @@
         "javascriptengineswitcher.chakracore.native.win-x64.nuspec",
         "readme.txt",
         "runtimes/win-x64/native/ChakraCore.dll",
+        "tools/Install.ps1",
+        "tools/Uninstall.ps1"
+      ]
+    },
+    "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86/3.1.0": {
+      "sha512": "35S9xg7CV1obZ5nWD0tqvzABHTuCLIVF68qwPkC6Tz95a2j4pTlNidBWJ1xrXzLq+WoPjKP/zcWIS46kPRMf5g==",
+      "type": "package",
+      "path": "javascriptengineswitcher.chakracore.native.win-x86/3.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props",
+        "chakra-core-license.txt",
+        "javascriptengineswitcher.chakracore.native.win-x86.3.1.0.nupkg.sha512",
+        "javascriptengineswitcher.chakracore.native.win-x86.nuspec",
+        "readme.txt",
+        "runtimes/win-x86/native/ChakraCore.dll",
         "tools/Install.ps1",
         "tools/Uninstall.ps1"
       ]
@@ -8471,10 +8553,10 @@
         "nuget.frameworks.nuspec"
       ]
     },
-    "React.AspNet/5.0.0": {
-      "sha512": "WXI4TWTNfbLioQp7Tt9OtUe9OiXdwzElrxIULCTHyFQNb6fBQZHwFlsUe+z0IxToVphMY7QIl6dcRNhGI2nBzQ==",
+    "React.AspNet/5.1.1": {
+      "sha512": "1zPCRWWGgIVXcKZT1Tv1ERf23ESirUqUkJ5y0+EMmJyzHavWKGpkVBTDN2seiP45EUV8k7KEJAgAAKU6ha0B2g==",
       "type": "package",
-      "path": "react.aspnet/5.0.0",
+      "path": "react.aspnet/5.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8482,14 +8564,15 @@
         "lib/netcoreapp3.0/React.AspNet.xml",
         "lib/netstandard2.0/React.AspNet.dll",
         "lib/netstandard2.0/React.AspNet.xml",
-        "react.aspnet.5.0.0.nupkg.sha512",
+        "logo_64.png",
+        "react.aspnet.5.1.1.nupkg.sha512",
         "react.aspnet.nuspec"
       ]
     },
-    "React.AspNet.Middleware/5.0.0": {
-      "sha512": "+riWdh2qCt6d6zPstQGFba4xegXBsl2rO9IM8c8YfdM3JSRYXBNibO0amZPXtb5wYNZMm4XR1sUNkRVyTwJv/w==",
+    "React.AspNet.Middleware/5.1.1": {
+      "sha512": "PWU/8vBXz+OINiYj0aqCYaLNmnaIcZZ4E16kj1GVjdkhGRWOLdHHUhEMXa85y0FSsI53ldCY8T5rC9JdhBqs2Q==",
       "type": "package",
-      "path": "react.aspnet.middleware/5.0.0",
+      "path": "react.aspnet.middleware/5.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8499,14 +8582,15 @@
         "lib/netstandard2.0/React.AspNet.Middleware.dll",
         "lib/netstandard2.0/React.AspNet.Middleware.pdb",
         "lib/netstandard2.0/React.AspNet.Middleware.xml",
-        "react.aspnet.middleware.5.0.0.nupkg.sha512",
+        "logo_64.png",
+        "react.aspnet.middleware.5.1.1.nupkg.sha512",
         "react.aspnet.middleware.nuspec"
       ]
     },
-    "React.Core/5.0.0": {
-      "sha512": "zojNhSXLUa1BrTTJm98wXSVIRLfddfKCuW/j9KtXblkhr09tikY6DZzuK6ez6DNFOvH1EyLUdRQDIdcriJ0IQQ==",
+    "React.Core/5.1.1": {
+      "sha512": "S+0UVyIAjAD/mpUluJ+bC1fjC3MXDXmMeEpwJd6RpgCZFEkrRQuiJ5TJNN6C0rW5Z2MWhaYjSvxgz8nKzk+qdQ==",
       "type": "package",
-      "path": "react.core/5.0.0",
+      "path": "react.core/5.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8522,7 +8606,8 @@
         "lib/netstandard2.0/React.Core.dll",
         "lib/netstandard2.0/React.Core.pdb",
         "lib/netstandard2.0/React.Core.xml",
-        "react.core.5.0.0.nupkg.sha512",
+        "logo_64.png",
+        "react.core.5.1.1.nupkg.sha512",
         "react.core.nuspec"
       ]
     },
@@ -13503,6 +13588,10 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "JavaScriptEngineSwitcher.ChakraCore >= 3.1.0",
+      "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64 >= 3.1.0",
+      "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64 >= 3.1.0",
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64 >= 3.1.0",
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86 >= 3.1.0",
       "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection >= 2.2.0",
       "MODELS >= 1.0.0",
       "Microsoft.AspNet.WebApi.Core >= 5.2.7",
@@ -13513,7 +13602,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.4",
-      "React.AspNet >= 5.0.0",
+      "React.AspNet >= 5.1.1",
       "Swashbuckle.AspNetCore >= 2.2.0",
       "Swashbuckle.AspNetCore.Swagger >= 2.2.0",
       "Swashbuckle.AspNetCore.SwaggerUi >= 2.2.0"
@@ -13568,6 +13657,22 @@
             "target": "Package",
             "version": "[3.1.0, )"
           },
+          "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
           "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": {
             "target": "Package",
             "version": "[2.2.0, )"
@@ -13613,7 +13718,7 @@
           },
           "React.AspNet": {
             "target": "Package",
-            "version": "[5.0.0, )"
+            "version": "[5.1.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

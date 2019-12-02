@@ -73,3 +73,4 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\net
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\x64\ChakraCore.dll
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\x86\ChakraCore.dll

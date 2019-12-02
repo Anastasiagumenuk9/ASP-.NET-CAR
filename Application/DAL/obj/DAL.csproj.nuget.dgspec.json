@@ -49,6 +49,22 @@
               "target": "Package",
               "version": "[3.1.0, )"
             },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -75,7 +91,7 @@
             },
             "React.AspNet": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.1.1, )"
             }
           },
           "imports": [
@@ -133,7 +149,19 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": {
               "target": "Package",
               "version": "[3.1.0, )"
             },
@@ -167,7 +195,7 @@
             },
             "React.AspNet": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.1.1, )"
             }
           },
           "imports": [

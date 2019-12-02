@@ -17,6 +17,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using MODELS.DB;
 using MODELS.DTO.Token;
+using React.AspNet;
+using JavaScriptEngineSwitcher.ChakraCore;
+using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
 
 namespace Application
 {
@@ -47,6 +50,9 @@ namespace Application
                 .AddDefaultTokenProviders();
 
             services.AddSwaggerDocumentation();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddReact();
+            services.AddJsEngineSwitcher(options => options.DefaultEngineName = ChakraCoreJsEngine.EngineName).AddChakraCore();
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -120,12 +126,14 @@ namespace Application
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
+            app.UseReact(config => { });
+
             app.UseMvc(routes =>
             {
 
                 routes.MapRoute(
                 name: "default",
-                template: "{controller=Home}/{action=Index}/{id?}");
+                template: "{controller=Account}/{action=Login}/{id?}");
 
             });
         }
