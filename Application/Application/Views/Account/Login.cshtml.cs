@@ -11,6 +11,7 @@ namespace Application.Views.Account
     {
         public void OnGet()
         {
+
         }
     }
 }
