@@ -14,13 +14,14 @@
           "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": "3.1.0",
           "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": "3.1.0",
           "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": "3.1.0",
-          "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": "2.2.0",
+          "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": "3.1.0",
           "MODELS": "1.0.0",
           "Microsoft.AspNet.Mvc": "5.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
+          "Microsoft.AspNetCore.SpaServices": "2.2.0",
           "Microsoft.EntityFrameworkCore.Tools": "2.2.0",
-          "React.AspNet": "5.0.0",
+          "React.AspNet": "5.1.1",
           "System.Drawing.Common": "4.5.0"
         },
         "runtime": {
@@ -116,15 +117,15 @@
           }
         }
       },
-      "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection/2.2.0": {
+      "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection/3.1.0": {
         "dependencies": {
           "JavaScriptEngineSwitcher.Core": "3.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard1.3/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.0"
+          "lib/netstandard2.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.1.0.0"
           }
         }
       },
@@ -2506,36 +2507,36 @@
           }
         }
       },
-      "React.AspNet/5.0.0": {
+      "React.AspNet/5.1.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
-          "React.AspNet.Middleware": "5.0.0",
-          "React.Core": "5.0.0"
+          "React.AspNet.Middleware": "5.1.1",
+          "React.Core": "5.1.1"
         },
         "runtime": {
           "lib/netstandard2.0/React.AspNet.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.3"
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.1.481"
           }
         }
       },
-      "React.AspNet.Middleware/5.0.0": {
+      "React.AspNet.Middleware/5.1.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.StaticFiles": "2.2.0",
           "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0",
-          "React.Core": "5.0.0"
+          "React.Core": "5.1.1"
         },
         "runtime": {
           "lib/netstandard2.0/React.AspNet.Middleware.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.3"
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.1.481"
           }
         }
       },
-      "React.Core/5.0.0": {
+      "React.Core/5.1.1": {
         "dependencies": {
           "JSPool": "4.0.0",
           "JavaScriptEngineSwitcher.Core": "3.1.0",
@@ -2544,8 +2545,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/React.Core.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.3"
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.1.481"
           }
         }
       },
@@ -3490,16 +3491,10 @@
       },
       "MODELS/1.0.0": {
         "dependencies": {
-          "JavaScriptEngineSwitcher.ChakraCore": "3.1.0",
-          "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": "3.1.0",
-          "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": "3.1.0",
-          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": "3.1.0",
-          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": "3.1.0",
-          "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": "2.2.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
-          "React.AspNet": "5.0.0"
+          "Microsoft.AspNetCore.SpaServices": "2.2.0"
         },
         "runtime": {
           "MODELS.dll": {}
@@ -3569,12 +3564,12 @@
       "path": "javascriptengineswitcher.core/3.1.0",
       "hashPath": "javascriptengineswitcher.core.3.1.0.nupkg.sha512"
     },
-    "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection/2.2.0": {
+    "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1oYYA2LSfaBSQDUB+y92hwrlZ8lWeXqdesojvh6pJQd+6i3nNPFJXmZXbuqgsd0sbBDXaIHzXYIkoZOBkVW3Fw==",
-      "path": "javascriptengineswitcher.extensions.msdependencyinjection/2.2.0",
-      "hashPath": "javascriptengineswitcher.extensions.msdependencyinjection.2.2.0.nupkg.sha512"
+      "sha512": "sha512-kmMJtNQyPGJqxTIDwRhCN9MSi6l9lYbc5hfj4w2i5sAlXBV/miKVrr3nXOS7ETU1U3bFnSp2tU7ySTUE+lKh0w==",
+      "path": "javascriptengineswitcher.extensions.msdependencyinjection/3.1.0",
+      "hashPath": "javascriptengineswitcher.extensions.msdependencyinjection.3.1.0.nupkg.sha512"
     },
     "JSPool/4.0.0": {
       "type": "package",
@@ -4787,26 +4782,26 @@
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
     },
-    "React.AspNet/5.0.0": {
+    "React.AspNet/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WXI4TWTNfbLioQp7Tt9OtUe9OiXdwzElrxIULCTHyFQNb6fBQZHwFlsUe+z0IxToVphMY7QIl6dcRNhGI2nBzQ==",
-      "path": "react.aspnet/5.0.0",
-      "hashPath": "react.aspnet.5.0.0.nupkg.sha512"
+      "sha512": "sha512-1zPCRWWGgIVXcKZT1Tv1ERf23ESirUqUkJ5y0+EMmJyzHavWKGpkVBTDN2seiP45EUV8k7KEJAgAAKU6ha0B2g==",
+      "path": "react.aspnet/5.1.1",
+      "hashPath": "react.aspnet.5.1.1.nupkg.sha512"
     },
-    "React.AspNet.Middleware/5.0.0": {
+    "React.AspNet.Middleware/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+riWdh2qCt6d6zPstQGFba4xegXBsl2rO9IM8c8YfdM3JSRYXBNibO0amZPXtb5wYNZMm4XR1sUNkRVyTwJv/w==",
-      "path": "react.aspnet.middleware/5.0.0",
-      "hashPath": "react.aspnet.middleware.5.0.0.nupkg.sha512"
+      "sha512": "sha512-PWU/8vBXz+OINiYj0aqCYaLNmnaIcZZ4E16kj1GVjdkhGRWOLdHHUhEMXa85y0FSsI53ldCY8T5rC9JdhBqs2Q==",
+      "path": "react.aspnet.middleware/5.1.1",
+      "hashPath": "react.aspnet.middleware.5.1.1.nupkg.sha512"
     },
-    "React.Core/5.0.0": {
+    "React.Core/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zojNhSXLUa1BrTTJm98wXSVIRLfddfKCuW/j9KtXblkhr09tikY6DZzuK6ez6DNFOvH1EyLUdRQDIdcriJ0IQQ==",
-      "path": "react.core/5.0.0",
-      "hashPath": "react.core.5.0.0.nupkg.sha512"
+      "sha512": "sha512-S+0UVyIAjAD/mpUluJ+bC1fjC3MXDXmMeEpwJd6RpgCZFEkrRQuiJ5TJNN6C0rW5Z2MWhaYjSvxgz8nKzk+qdQ==",
+      "path": "react.core/5.1.1",
+      "hashPath": "react.core.5.1.1.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",

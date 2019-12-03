@@ -101,17 +101,17 @@
           }
         }
       },
-      "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection/2.2.0": {
+      "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection/3.1.0": {
         "type": "package",
         "dependencies": {
-          "JavaScriptEngineSwitcher.Core": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.1"
+          "JavaScriptEngineSwitcher.Core": "3.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
         },
         "compile": {
-          "lib/netstandard1.3/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll": {}
+          "lib/netstandard2.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll": {}
+          "lib/netstandard2.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll": {}
         }
       },
       "JSPool/4.0.0": {
@@ -4699,16 +4699,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
-          "JavaScriptEngineSwitcher.ChakraCore": "3.0.0",
-          "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": "3.1.0",
-          "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": "3.1.0",
-          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": "3.1.0",
-          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": "3.1.0",
-          "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": "2.2.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
-          "React.AspNet": "5.1.1"
+          "Microsoft.AspNetCore.SpaServices": "2.2.0"
         },
         "compile": {
           "bin/placeholder/MODELS.dll": {}
@@ -4885,19 +4879,22 @@
         "readme.txt"
       ]
     },
-    "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection/2.2.0": {
-      "sha512": "1oYYA2LSfaBSQDUB+y92hwrlZ8lWeXqdesojvh6pJQd+6i3nNPFJXmZXbuqgsd0sbBDXaIHzXYIkoZOBkVW3Fw==",
+    "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection/3.1.0": {
+      "sha512": "kmMJtNQyPGJqxTIDwRhCN9MSi6l9lYbc5hfj4w2i5sAlXBV/miKVrr3nXOS7ETU1U3bFnSp2tU7ySTUE+lKh0w==",
       "type": "package",
-      "path": "javascriptengineswitcher.extensions.msdependencyinjection/2.2.0",
+      "path": "javascriptengineswitcher.extensions.msdependencyinjection/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "javascriptengineswitcher.extensions.msdependencyinjection.2.2.0.nupkg.sha512",
+        "LICENSE.txt",
+        "javascriptengineswitcher.extensions.msdependencyinjection.3.1.0.nupkg.sha512",
         "javascriptengineswitcher.extensions.msdependencyinjection.nuspec",
         "lib/net45/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll",
         "lib/net45/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.xml",
         "lib/netstandard1.3/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll",
         "lib/netstandard1.3/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.xml",
+        "lib/netstandard2.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll",
+        "lib/netstandard2.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.xml",
         "readme.txt"
       ]
     },
@@ -12808,11 +12805,12 @@
       "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64 >= 3.1.0",
       "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64 >= 3.1.0",
       "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86 >= 3.1.0",
-      "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection >= 2.2.0",
+      "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection >= 3.1.0",
       "MODELS >= 1.0.0",
       "Microsoft.AspNet.Mvc >= 5.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
+      "Microsoft.AspNetCore.SpaServices >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Tools >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "React.AspNet >= 5.1.1",
@@ -12890,7 +12888,7 @@
           },
           "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "[3.1.0, )"
           },
           "Microsoft.AspNet.Mvc": {
             "target": "Package",
@@ -12901,6 +12899,10 @@
             "version": "[2.2.0, )"
           },
           "Microsoft.AspNetCore.Razor.Design": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.SpaServices": {
             "target": "Package",
             "version": "[2.2.0, )"
           },

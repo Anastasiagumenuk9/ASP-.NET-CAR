@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,6 +20,7 @@ using MODELS.DTO.Token;
 using React.AspNet;
 using JavaScriptEngineSwitcher.ChakraCore;
 using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
+
 
 namespace Application
 {
@@ -50,9 +51,11 @@ namespace Application
                 .AddDefaultTokenProviders();
 
             services.AddSwaggerDocumentation();
+
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddReact();
-            services.AddJsEngineSwitcher(options => options.DefaultEngineName = ChakraCoreJsEngine.EngineName).AddChakraCore();
+            services.AddJsEngineSwitcher(options => options.DefaultEngineName = ChakraCoreJsEngine.EngineName)
+            .AddChakraCore();
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -73,7 +76,7 @@ namespace Application
                 options.User.RequireUniqueEmail = true;
             });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc();
 
           
 
@@ -109,6 +112,7 @@ namespace Application
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerDocumentation();
+           
             }
             else
             {
@@ -123,17 +127,23 @@ namespace Application
             app.UseHttpsRedirection();
 
           
-            app.UseStaticFiles();
+          
             app.UseCookiePolicy();
 
-            app.UseReact(config => { });
+            app.UseReact(config =>
+            {
+              config
+             .SetLoadBabel(false)
+             .AddScriptWithoutTransform("~/assets/bundle.js");});
+            app.UseStaticFiles();
 
             app.UseMvc(routes =>
             {
 
                 routes.MapRoute(
                 name: "default",
-                template: "{controller=Account}/{action=Login}/{id?}");
+                template: "api/{controller}/{action}");
+                routes.MapSpaFallbackRoute("spa-fallback", new { controller = "Home", action = "Index" });
 
             });
         }
