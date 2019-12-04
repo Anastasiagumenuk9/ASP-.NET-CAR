@@ -6,11 +6,16 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace MODELS.DB
 {
-    public class DataContext : IdentityDbContext<ApplicationUser>
+    public  class DataContext : IdentityDbContext<ApplicationUser>
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-           // Database.EnsureCreated();
+            //Database.EnsureCreated();
+        }
+
+        public DataContext() 
+        {
+           
         }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
