@@ -126,19 +126,19 @@ h4 {
 }
 
 ::selection {
-  color: black;
+  color: #fff;
   background: #17bed2;
   text-shadow: none;
 }
 
 ::-webkit-selection {
-  color: black;
+  color: #fff;
   background: #17bed2;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  color: black;
+  color: #fff;
   background: #17bed2;
   text-shadow: none;
 }
@@ -573,7 +573,7 @@ fieldset[disabled] .btn-theme {
   height: 40px;
   font-size: 11px;
   font-weight: 400;
-  color: black;
+  color: #fff;
   text-align: center;
   line-height: 3;
   letter-spacing: 1px;
@@ -592,7 +592,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .back-to-top:hover {
-  color: black;
+  color: #fff;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -807,7 +807,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .color-white {
-  color: black;
+  color: #fff;
 }
 
 .color-heading {

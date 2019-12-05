@@ -74,7 +74,7 @@ a:focus, a:hover, a:active {
 }
 
 .link:after {
-  position: absolute
+  position: absolute;
   top: 8px;
   right: -15px;
   width: 9px;
@@ -93,7 +93,7 @@ span {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: Hind, sans-serif;
-
+  color: #515769;
   line-height: 1.4;
   margin: 0 0 15px;
 }
@@ -128,19 +128,19 @@ h4 {
 }
 
 ::selection {
-  color: black;
+  color: #fff;
   background: #17bed2;
   text-shadow: none;
 }
 
 ::-webkit-selection {
-  color: black;
+  color: #fff;
   background: #17bed2;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  color: black;
+  color: #fff;
   background: #17bed2;
   text-shadow: none;
 }
@@ -208,7 +208,7 @@ h4 {
 
 .accordion [aria-expanded="true"],
 .accordion .collapse.in {
-  color: black;
+  color: #fff;
   background: #17bed2;
 }
 
@@ -261,14 +261,14 @@ fieldset[disabled] .btn-theme {
 }
 
 .btn-white-bg {
-  color: black;
+  color: #fff;
   background: #515769;
   border-color: transparent;
   border-width: 0;
 }
 
 .btn-white-bg:hover, .btn-white-bg:focus, .btn-white-bg.focus {
-  color: black;
+  color: #fff;
   background: #17bed2;
   border-color: transparent;
 }
@@ -294,7 +294,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .btn-default-bg:hover, .btn-default-bg:focus, .btn-default-bg.focus {
-  color: black;
+  color: #fff;
   background: #17bed2;
   border-color: transparent;
 }
@@ -713,7 +713,7 @@ fieldset[disabled] .btn-theme {
   font-size: 13px;
   font-weight: 600;
   font-family: Hind, sans-serif;
-  color: black;
+  color: #fff;
   text-transform: uppercase;
   line-height: 55px;
   padding: 20px;
@@ -749,7 +749,7 @@ fieldset[disabled] .btn-theme {
   /* Bootstrap collapse of navigation with a maximum width: 991px
     (Change it to any breakpoint you want to be collapsed) */
   .header {
-    background: black;
+    background: #fff;
   }
   .header .navbar-toggle {
     display: block;
@@ -788,7 +788,7 @@ fieldset[disabled] .btn-theme {
   }
   /* Navbar Nav */
   .header .nav-item-child {
-    color: black;
+    color: #515769;
     line-height: 1.4;
     padding: 12px 12px 12px 15px;
   }
@@ -852,7 +852,7 @@ fieldset[disabled] .btn-theme {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
   .page-on-scroll .header .nav-item-child {
-    color: black;
+    color: #515769;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -864,7 +864,7 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 .contact-list > li {
   font-size: 13px;
-  color: black;
+  color: #81848f;
   margin-bottom: 10px;
 }
 
@@ -881,7 +881,7 @@ fieldset[disabled] .btn-theme {
   height: 40px;
   font-size: 11px;
   font-weight: 400;
-  color: black;
+  color: #fff;
   text-align: center;
   line-height: 3;
   letter-spacing: 1px;
@@ -900,7 +900,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .back-to-top:hover {
-  color: black;
+  color: #fff;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -1012,20 +1012,18 @@ fieldset[disabled] .btn-theme {
   transform: translate3d(0, -50%, 0);
 }
 
-
-h1.carousel-title {
-    font-size: 80px;
-    font-weight: 700;
-    color: black;
-    line-height: 1.1;
-    text-transform: uppercase;
+.carousel-title {
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
-    .carousel-title {
-        font-size: 60px;
-        color: black;
-    }
+  .carousel-title {
+    font-size: 60px;
+  }
 }
 
 /*------------------------------------------------------------------
@@ -1065,11 +1063,7 @@ h1.carousel-title {
 }
 
 .color-white {
-  color: black !important;
-}
-
-.color-black {
-    color: #000000;
+  color: #fff !important;
 }
 
 .color-heading {
