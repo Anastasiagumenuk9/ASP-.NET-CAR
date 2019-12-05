@@ -33,6 +33,13 @@
     <ProjectReference Include="..\MODELS\MODELS.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Order\" />
+    <Folder Include="Views\Color\" />
+    <Folder Include="Views\Location\" />
+    <Folder Include="Views\City\" />
+  </ItemGroup>
+
   <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>
