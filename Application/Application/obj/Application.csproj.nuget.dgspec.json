@@ -30,6 +30,9 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
+              "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\BAL.csproj": {
+                "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\BAL.csproj"
+              },
               "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj": {
                 "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj"
               }
@@ -127,6 +130,126 @@
             "Swashbuckle.AspNetCore.SwaggerUi": {
               "target": "Package",
               "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\BAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\BAL.csproj",
+        "projectName": "BAL",
+        "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\BAL.csproj",
+        "packagesPath": "C:\\Users\\anast\\.nuget\\packages\\",
+        "outputPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\anast\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj": {
+                "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "JavaScriptEngineSwitcher.ChakraCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.SpaServices": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "React.AspNet": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             }
           },
           "imports": [
