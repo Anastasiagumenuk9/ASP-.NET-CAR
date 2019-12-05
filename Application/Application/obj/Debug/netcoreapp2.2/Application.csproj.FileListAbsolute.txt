@@ -65,3 +65,13 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\net
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\package.json
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\BAL.dll
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\BAL.pdb
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Car\AddCar.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\SignedOut.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ResetPassword.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\LoginWith2fa.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgotPassword.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\NewLogin.cshtml.g.cs
