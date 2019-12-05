@@ -2,9 +2,10 @@
 import ReactDOM from 'react-dom'
 import { RouteComponentProps } from 'react-router';
 import { Link, NavLink } from 'react-router-dom'; 
+import axios from 'axios';
 
 
-
+/*
 export class Car extends Component {
 
     constructor(props) {
@@ -58,5 +59,50 @@ export class Car extends Component {
         </div>;
     }  
     }
+    
+ export class CarsList extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            CarData: []
+        }
+    }
+
+    componentDidMount() {
+        axios.get("http://localhost:44325/api/cars").then(response => {
+            //console.log(response.data);  
+            this.setState({
+                CarData: response.data
+            });
+        });
+    }
+
+    render() {
+
+        return (
+            <section>
+                <h1>Products List</h1>
+                <div>
+                    <table>
+                        <thead><tr><th>Car Id</th><th>Car Name</th><th>Car Price</th></tr></thead>
+                        <tbody>
+                            {
+                                this.state.CartData.map((p, index) => {
+                                    return <tr key={index}><td>{p.Id}</td><td> {p.Name}</td><td>{p.Price}</td></tr>;
+                                })
+                            }
+                        </tbody>
+                    </table>
+                </div>
 
 
+            </section>
+        )
+    }
+}
+
+ReactDOM.render(
+    <CarsList />,
+    document.getElementById('content'));  
+
+*/

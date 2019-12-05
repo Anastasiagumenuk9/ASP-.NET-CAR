@@ -24,12 +24,6 @@ export class NavMenu extends Component {
               </NavItem>
                     </LinkContainer>
 
-                 <LinkContainer to={'/car'}>
-                     <NavItem>
-                     <Glyphicon glyph='car' /> Cars
-              </NavItem>
-                    </LinkContainer>
-
                 <LinkContainer to={'/myaccount'}>
                     < NavItem >
                     <Glyphicon glyph='myaccount' /> MyAccount
@@ -46,7 +40,14 @@ export class NavMenu extends Component {
               <NavItem>
                 <Glyphicon glyph='th-list' /> Fetch data
               </NavItem>
-            </LinkContainer>
+                    </LinkContainer>
+
+
+                    <LinkContainer to={'/carlist'}>
+                        <NavItem>
+                            <Glyphicon glyph='carlist' /> Cars
+              </NavItem>
+                    </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
