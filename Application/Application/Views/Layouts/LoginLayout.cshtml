@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewData["Title"] = "LoginLayout";
+}
+<h2>LoginLayout</h2>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Форма авторизації</title>
+    <link href="~/css/Login.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/css/jquery.slim.min.js"></script>
+    <script src="~/css/bootstrap.bundle.min.js"></script>
+    <div class="container">
+        <form asp-controller="Goods" asp-action="index">
+            <button class="btn btn-lg btn-primary btn-block text-uppercase col-sm-9 col-md-7 col-lg-5 mx-auto" style="color: white;" type="submit">Назад</button>
+        </form>
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Вхід</h5>
+                        <form method="post" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl" class="form-signin">
+                            <div asp-validation-summary="ModelOnly"></div>
+                            <div class="form-label-group">
+                                <input asp-for="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                                <label asp-for="email" for="inputEmail">Електронна пошта</label>
+                                <span asp-validation-for="email"></span>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input asp-for="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                <label asp-for="password" for="inputPassword">Пароль</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input asp-for="RememberMe" type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label asp-for="RememberMe" class="custom-control-label" for="customCheck1">Запам'ятати пароль?</label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Увійти</button>
+                            <hr class="my-4">
+                            <button class="btn btn-lg btn-google btn-block text-uppercase" style="color: white; background-color: #ea4335" type="submit"><i class="fab fa-google mr-2"></i>Увійти через Google</button>
+                            <button class="btn btn-lg btn-facebook btn-block text-uppercase" style="color: white; background-color: #3b5998" type="submit"><i class="fab fa-facebook-f mr-2"></i>Увійти через Facebook</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+</body>
+</html>
+
