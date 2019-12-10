@@ -75,3 +75,12 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\net
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\LoginWith2fa.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgotPassword.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\NewLogin.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Layouts\LoginLayout.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ConfirmEmail.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccessDenied.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ExternalLogin.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgotPasswordConfirmation.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\Lockout.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\LoginWithRecoveryCode.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\NewRegister.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ResetPasswordConfirmation.cshtml.g.cs
