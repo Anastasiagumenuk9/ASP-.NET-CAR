@@ -1,11 +1,6 @@
 ﻿@using System.Linq
+@model RegisterViewModel
 @using MODELS.ViewModels
-@using MODELS.DB
-@using Microsoft.AspNetCore.Authorization;
-@using Microsoft.AspNetCore.Identity;
-@using Microsoft.AspNetCore.Mvc;
-@model LoginViewModel
-@inject SignInManager<ApplicationUser> SignInManager
 @{
     Layout = null;
 }
@@ -14,7 +9,7 @@
 <html>
 
 <head>
-    <title>Log in</title>
+    <title>Registration</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -26,9 +21,13 @@
             window.scrollTo(0, 1);
         }
     </script>
-
+    <style>
+        li {
+            font-size: 20px;
+            font-family: initial;
+        }
+    </style>
     <link rel="stylesheet" href="~/css/style_login.css" />
-
     <link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
 
 </head>
@@ -36,17 +35,29 @@
 <body>
     <div class="back_image"></div>
     <div class="w3ls-login box box--big">
-        <h1 class="title-page">Sign In </h1>
-        <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+        <h1 class="title-page">Registration</h1>
+        <form asp-route-returnurl="@ViewData["ReturnUrl"]" asp-route-text="If_you_read_that_smile" method="post">
             <div class="agile-field-txt">
                 <label asp-for="Email"></label>
-                <input asp-for="Email" class="form-control" id="email" placeholder="Enter your login" />
-                <span asp-validation-for="Email" class="agile-right"></span>
+                <input asp-for="Email" class="form-control" id="email" placeholder="Your e-mail adress" />
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="agile-field-txt">
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone" class="form-control" id="phone" placeholder="Your phone" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+
+
+            <div class="agile-field-txt">
                 <label asp-for="Password"></label>
-                <input asp-for="Password" id="pass" class="form-control" placeholder="Enter your password" />
-                <span asp-validation-for="Password" class="text-danger"></span>
+                <input asp-for="Password" id="confirm" class="form-control" placeholder="Enter your password" />
+                @*<span asp-validation-for="Password" class="text-danger"></span>*@
+            </div>
+            <div class="agile-field-txt">
+                <label asp-for="ConfirmPassword">Confirm password</label>
+                <input asp-for="ConfirmPassword" id="pass" class="form-control" placeholder="Confirm password" />
+                @*<span asp-validation-for="ConfirmPassword" class="text-danger"></span>*@
                 <div asp-validation-summary="All" class="agile_label" style="color : red"></div>
             </div>
             <div class="agile-field-txt">
@@ -54,34 +65,16 @@
                     <input id="check3" name="check3" type="checkbox" value="show password" onclick="ShowPassword()">
                     <label class="check" for="check3">Show password</label>
                 </div>
-                <div class="agile-right">
-                    <a asp-action="ForgotPassword">Forgot your password?</a>
-                </div>
-            </div>
-            <div class="w3ls-bot">
-                <div class="switch-agileits">
-                    <label class="switch">
-                        <input asp-for="RememberMe">
-                        @Html.DisplayNameFor(m => m.RememberMe)
-                        <span class="slider round"></span>
-                    </label>
-                </div>
             </div>
             <div class="agile-field-txt">
                 <p>
-                    <input type="submit" value="SIGN IN">
+                    <input type="submit" value="REGISTER">
                 </p>
             </div>
             <div class="agile-right">
-                <a asp-action="NewRegister" asp-route-returnurl="@ViewData["ReturnUrl"]">REGISTRATION</a>
+                <a asp-action="NewLogin" asp-route-returnurl="@ViewData["ReturnUrl"]">LOGIN</a>
             </div>
         </form>
-    </div>
-
-    <div class="copy-wthree">
-        <p>
-            © 2019 | SMS-service
-        </p>
     </div>
 
 </body>
@@ -90,14 +83,19 @@
 <script>
     function ShowPassword() {
         var x = document.getElementById("pass");
+        var c = document.getElementById("confirm");
         if (x.type === "password") {
             x.type = "text";
+            c.type = "text";
         } else {
             x.type = "password";
+            c.type = "password";
         }
     }
+
 </script>
 
 @section Scripts {
     @await Html.PartialAsync("_ValidationScriptsPartial")
 }
+
