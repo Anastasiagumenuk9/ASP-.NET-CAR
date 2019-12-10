@@ -13,6 +13,7 @@ using MODELS.ViewModels;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using BAL.Services;
+using IEmailSender = Microsoft.AspNetCore.Identity.UI.Services.IEmailSender;
 
 namespace Application.Controllers
 {
@@ -23,17 +24,21 @@ namespace Application.Controllers
        
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly Microsoft.AspNetCore.Identity.UI.Services.IEmailSender _emailSender;
         private readonly ILogger _logger;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            ILogger<AccountController> logger)
+            IEmailSender emailSender,
+            ILogger<AccountController> logger
+            )
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _emailSender = emailSender;
             _logger = logger;
-
+           
         }
 
         [TempData]
@@ -43,7 +48,7 @@ namespace Application.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> LoginWith2fa(bool rememberMe, string returnUrl = null)
         {
-           
+            // Ensure the user has gone through the username & password screen first
             var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();
 
             if (user == null)
@@ -99,7 +104,7 @@ namespace Application.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> LoginWithRecoveryCode(string returnUrl = null)
         {
-           
+            // Ensure the user has gone through the username & password screen first
             var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();
             if (user == null)
             {
@@ -160,7 +165,7 @@ namespace Application.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> NewLogin(string returnUrl = null)
         {
-          
+            // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
             ViewData["ReturnUrl"] = returnUrl;
@@ -199,11 +204,16 @@ namespace Application.Controllers
                 }
             }
 
-           
+            // If we got this far, something failed, redisplay form
             return View(model);
         }
 
-       
+        /// <summary>
+        /// Get registration view
+        /// </summary>
+        /// <param name="groupId">If user is ivited he had a link with group Id to registration in that ApplicationGroup</param>
+        /// <param name="returnUrl"></param>
+        /// <returns>Registration view</returns>
 		[HttpGet]
         [AllowAnonymous]
         public IActionResult NewRegister(string returnUrl = null)
@@ -213,7 +223,13 @@ namespace Application.Controllers
             return View();
         }
 
-       
+        /// <summary>
+        /// Post method to registration new user
+        /// </summary>
+        /// <param name="model">ViewModel of Application user from View</param>
+        /// <param name="groupId">If user is ivited he had a link with group Id to registration in that ApplicationGroup</param>
+        /// <param name="returnUrl"></param>
+        /// <returns>Home page if successfully</returns>
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -237,10 +253,12 @@ namespace Application.Controllers
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-                   
+                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                   // var callbackUrl = Url.EmailConfirmationLink(user.Id, code, Request.Scheme);
+                    //await _emailSender.SendEmailConfirmationAsync(model.Email, callbackUrl);
                     if (model.CorporateUser)
                     {
-                        await _userManager.AddToRoleAsync(user, "Admin");
+                        await _userManager.AddToRoleAsync(user, "Moderator");
                     }
                     else
                     {
@@ -387,11 +405,16 @@ namespace Application.Controllers
                     return RedirectToAction(nameof(ForgotPasswordConfirmation));
                 }
 
-               
+                // For more information on how to enable account confirmation and password reset please
+                // visit https://go.microsoft.com/fwlink/?LinkID=532713
+                var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+               // var callbackUrl = Url.ResetPasswordCallbackLink(user.Id, code, Request.Scheme);
+               // await _emailSender.SendEmailAsync(model.Email, "Reset Password",
+                  // $"Please reset your password by clicking here: <a href='{callbackUrl}'>link</a>");
                 return RedirectToAction(nameof(ForgotPasswordConfirmation));
             }
 
-         
+            // If we got this far, something failed, redisplay form
             return View(model);
         }
 
@@ -452,7 +475,7 @@ namespace Application.Controllers
             return View();
         }
 
-      
+        #region Helpers
 
         private void AddErrors(IdentityResult result)
         {
@@ -474,6 +497,6 @@ namespace Application.Controllers
             }
         }
 
-      
+        #endregion
     }
 }
