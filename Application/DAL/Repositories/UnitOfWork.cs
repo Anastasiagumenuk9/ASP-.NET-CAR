@@ -23,6 +23,8 @@ namespace DAL.Repositories
         private IGenericRepository<PhotoUser> photosUserRepo;
         private IGenericRepository<Transmission> transmissionRepo;
         private IGenericRepository<RequiredInformation> RequiredInformationsRepo;
+        private IGenericRepository<Role> rolesRepo;
+        private IGenericRepository<user> usersRepo;
 
 
         public UnitOfWork(DataContext context)
@@ -149,7 +151,25 @@ namespace DAL.Repositories
             }
         }
 
-       
+        public IGenericRepository<Role> Roles
+        {
+            get
+            {
+                if (rolesRepo == null) { rolesRepo = new GenericRepository<Role>(context); }
+                return rolesRepo;
+            }
+        }
+
+
+        public IGenericRepository<user> users
+        {
+            get
+            {
+                if (usersRepo == null) { usersRepo = new GenericRepository<user>(context); }
+                return usersRepo;
+            }
+        }
+
 
         #endregion
         public int Save()

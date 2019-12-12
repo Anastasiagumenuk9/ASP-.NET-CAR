@@ -20,7 +20,10 @@ using MODELS.DTO.Token;
 using React.AspNet;
 using JavaScriptEngineSwitcher.ChakraCore;
 using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
-
+using MODELS.Interfaces;
+using DAL.Repositories;
+using AutoMapper;
+using BAL.Services;
 
 namespace Application
 {
@@ -50,6 +53,17 @@ namespace Application
                 .AddEntityFrameworkStores<DataContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddTransient<IGenericRepository<user>, GenericRepository<user>>();
+            services.AddTransient<IGenericRepository<Role>, GenericRepository<Role>>();
+
+            // установка конфигурации подключения
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+               .AddCookie(options =>
+               {
+                   options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                   options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+               });
+
             services.AddSwaggerDocumentation();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -78,7 +92,15 @@ namespace Application
 
             services.AddMvc();
 
-          
+
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfile());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
 
             services.Configure<TokenManagement>(Configuration.GetSection("tokenManagement"));
             var token = Configuration.GetSection("tokenManagement").Get<TokenManagement>();

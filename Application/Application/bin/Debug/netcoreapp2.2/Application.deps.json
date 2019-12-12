@@ -25,6 +25,7 @@
       "Application/1.0.0": {
         "dependencies": {
           "BAL": "1.0.0",
+          "DAL": "1.0.0",
           "JavaScriptEngineSwitcher.ChakraCore": "3.1.0",
           "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": "3.1.0",
           "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": "3.1.0",
@@ -788,6 +789,27 @@
         },
         "compile": {
           "BAL.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "dependencies": {
+          "JavaScriptEngineSwitcher.ChakraCore": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": "3.1.0",
+          "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": "3.1.0",
+          "MODELS": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
+          "Microsoft.AspNetCore.Razor.Design": "2.2.0",
+          "Microsoft.AspNetCore.SpaServices": "2.2.0",
+          "React.AspNet": "5.1.1"
+        },
+        "runtime": {
+          "DAL.dll": {}
+        },
+        "compile": {
+          "DAL.dll": {}
         }
       },
       "MODELS/1.0.0": {
@@ -4299,6 +4321,11 @@
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
     "BAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

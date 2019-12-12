@@ -7,13 +7,16 @@ namespace MODELS.ViewModels
 {
     public class LoginViewModel
     {
-        [Required]
+     
         [EmailAddress]
+        [Required(ErrorMessage = "Enter Email")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Enter Password")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        public string ReturnUrl { get; set; }
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }

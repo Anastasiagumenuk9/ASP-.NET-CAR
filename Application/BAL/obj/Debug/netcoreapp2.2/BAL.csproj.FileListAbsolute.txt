@@ -25,3 +25,4 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2.2\BAL.pdb
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\bin\Debug\netcoreapp2.2\x64\ChakraCore.dll
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\bin\Debug\netcoreapp2.2\x86\ChakraCore.dll
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\BAL\obj\Debug\netcoreapp2.2\BAL.csprojAssemblyReference.cache

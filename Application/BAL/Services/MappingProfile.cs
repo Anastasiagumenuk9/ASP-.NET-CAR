@@ -58,6 +58,22 @@ namespace BAL.Services
             CreateMap<OrderViewModel, Order>();
 
 
+            CreateMap<user, LoginViewModel>()
+                .ForMember(bview => bview.Email, bmod => bmod.MapFrom(src => src.Email))
+                .ForMember(bview => bview.Password, bmod => bmod.MapFrom(src => src.Password));
+
+            CreateMap<user, RegisterViewModel>()
+            .ForMember(bview => bview.Email, bmod => bmod.MapFrom(src => src.Email))
+            .ForMember(bview => bview.Password, bmod => bmod.MapFrom(src => src.Password));
+
+
+            CreateMap<RegisterViewModel, user>()
+            .ForMember(bview => bview.Email, bmod => bmod.MapFrom(src => src.Email))
+            .ForMember(bview => bview.Password, bmod => bmod.MapFrom(src => src.Password));
+
+            CreateMap<Role, RoleViewModel>()
+             .ForMember(bview => bview.Id, bmod => bmod.MapFrom(src => src.Id))
+             .ForMember(bview => bview.Name, bmod => bmod.MapFrom(src => src.Name));
 
             CreateMap<RequiredInformation, RequiredInformationViewModel>().ReverseMap();
 

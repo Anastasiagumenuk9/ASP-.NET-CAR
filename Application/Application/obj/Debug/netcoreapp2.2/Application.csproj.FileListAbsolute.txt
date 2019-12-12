@@ -84,3 +84,5 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\net
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\LoginWithRecoveryCode.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\NewRegister.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ResetPasswordConfirmation.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\DAL.dll
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\DAL.pdb

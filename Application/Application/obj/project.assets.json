@@ -5082,6 +5082,29 @@
           "bin/placeholder/BAL.dll": {}
         }
       },
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "JavaScriptEngineSwitcher.ChakraCore": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64": "3.1.0",
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": "3.1.0",
+          "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": "3.1.0",
+          "MODELS": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
+          "Microsoft.AspNetCore.Razor.Design": "2.2.0",
+          "Microsoft.AspNetCore.SpaServices": "2.2.0",
+          "React.AspNet": "5.1.1"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
       "MODELS/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -13838,6 +13861,11 @@
       "path": "../BAL/BAL.csproj",
       "msbuildProject": "../BAL/BAL.csproj"
     },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
     "MODELS/1.0.0": {
       "type": "project",
       "path": "../MODELS/MODELS.csproj",
@@ -13847,6 +13875,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "BAL >= 1.0.0",
+      "DAL >= 1.0.0",
       "JavaScriptEngineSwitcher.ChakraCore >= 3.1.0",
       "JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64 >= 3.1.0",
       "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64 >= 3.1.0",
@@ -13901,6 +13930,9 @@
           "projectReferences": {
             "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\BAL.csproj": {
               "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\BAL\\BAL.csproj"
+            },
+            "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\DAL.csproj"
             },
             "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj": {
               "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj"

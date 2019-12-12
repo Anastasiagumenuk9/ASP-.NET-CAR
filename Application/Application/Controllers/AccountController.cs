@@ -13,11 +13,12 @@ using MODELS.ViewModels;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using BAL.Services;
-using IEmailSender = Microsoft.AspNetCore.Identity.UI.Services.IEmailSender;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Application.Controllers
 {
-    [Authorize]
+    
     [Route("[controller]/[action]")]
     public class AccountController : Controller
     {
@@ -26,18 +27,21 @@ namespace Application.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly Microsoft.AspNetCore.Identity.UI.Services.IEmailSender _emailSender;
         private readonly ILogger _logger;
+        private DataContext context;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            IEmailSender emailSender,
-            ILogger<AccountController> logger
+           
+            ILogger<AccountController> logger,
+            DataContext context
             )
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            _emailSender = emailSender;
+           
             _logger = logger;
+            this.context = context;
            
         }
 
@@ -61,6 +65,8 @@ namespace Application.Controllers
 
             return View(model);
         }
+
+
 
         [HttpPost]
         [AllowAnonymous]
@@ -177,34 +183,20 @@ namespace Application.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> NewLogin(LoginViewModel model, string returnUrl = null)
         {
-            ViewData["ReturnUrl"] = returnUrl;
-            if (ModelState.IsValid)
-            {
-                // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
-                if (result.Succeeded)
-                {
-                    _logger.LogInformation("User logged in.");
-                    return RedirectToLocal(returnUrl);
-                }
-                if (result.RequiresTwoFactor)
-                {
-                    return RedirectToAction(nameof(LoginWith2fa), new { returnUrl, model.RememberMe });
-                }
-                if (result.IsLockedOut)
-                {
-                    _logger.LogWarning("User account locked out.");
-                    return RedirectToAction(nameof(Lockout));
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                    return View(model);
-                }
-            }
+            //if (ModelState.IsValid)
+            //{
+            //    ApplicationUser user = await context.ApplicationUsers
+            //        .FirstOrDefaultAsync(u => u.Email == model.Email && u.PasswordHash== model.Password);
 
-            // If we got this far, something failed, redisplay form
+            //    else if (user != null)
+            //    {
+            //        await Authenticate(user); // аутентификация
+
+
+            //        return RedirectToAction("Index", "Goods");
+            //    }
+            //    ModelState.AddModelError("", "Error email or password!");
+            //}
             return View(model);
         }
 
@@ -279,14 +271,14 @@ namespace Application.Controllers
         }
 
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Logout()
-        {
-            await _signInManager.SignOutAsync();
-            _logger.LogInformation("User logged out.");
-            return RedirectToAction(nameof(HomeController.Index), "Home");
-        }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Logout()
+        //{
+        //    await _signInManager.SignOutAsync();
+        //    _logger.LogInformation("User logged out.");
+        //    return RedirectToAction(nameof(HomeController.Index), "Home");
+        //}
 
         [HttpPost]
         [AllowAnonymous]
@@ -497,6 +489,84 @@ namespace Application.Controllers
             }
         }
 
-        #endregion
+
+      
+
+
+
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View(new RegisterViewModel());
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(RegisterViewModel model)
+        {
+            bool k = true;
+            if (k == true)
+            {
+                user user = await context.users.FirstOrDefaultAsync(u => u.Email == model.Email);
+                if (user == null)
+                {
+                    // добавляем пользователя в бд
+                    user = new user { Email = model.Email, Password = model.Password, RoleId = 1};
+                    Role userRole = await context.roles.FirstOrDefaultAsync(r => r.Name == "User");
+                    if (userRole != null)
+                        user.Role = userRole;
+
+                    context.users.Add(user);
+                    await context.SaveChangesAsync();
+                    context.SaveChanges();
+
+                    await Authenticate(user); // аутентификация
+
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                    ModelState.AddModelError("", "Encorrect Data!");
+            }
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Login(string returnUrl = null)
+        {
+            return View(new LoginViewModel { ReturnUrl = returnUrl });
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+               user user = await context.users
+                    .Include(u => u.Role)
+                    .FirstOrDefaultAsync(u => u.Email == model.Email && u.Password == model.Password);
+                if (user != null)
+                {
+                    await Authenticate(user); // аутентификация
+
+                    return RedirectToAction("Index", "Home");
+                }
+                ModelState.AddModelError("", "Некорректные логин и(или) пароль");
+            }
+            return View(model);
+        }
+        private async Task Authenticate(user user)
+        {
+            // создаем один claim
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimsIdentity.DefaultNameClaimType, user.Email),
+                new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role?.Name)
+            };
+            // создаем объект ClaimsIdentity
+            ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType,
+                ClaimsIdentity.DefaultRoleClaimType);
+            // установка аутентификационных куки
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(id));
+        }
     }
+    #endregion
 }

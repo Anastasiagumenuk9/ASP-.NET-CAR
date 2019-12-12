@@ -33,6 +33,11 @@ namespace MODELS.Interfaces
 
         IGenericRepository<RequiredInformation> RequiredInformation { get; }
 
+        IGenericRepository<Role> Roles { get; }
+
+        IGenericRepository<user> users { get; }
+
+
 
 
 

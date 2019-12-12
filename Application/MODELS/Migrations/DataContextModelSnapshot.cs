@@ -296,6 +296,19 @@ namespace MODELS.Migrations
                     b.ToTable("RequiredInformation");
                 });
 
+            modelBuilder.Entity("MODELS.DB.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("roles");
+                });
+
             modelBuilder.Entity("MODELS.DB.Transmission", b =>
                 {
                     b.Property<int>("Id")
@@ -307,6 +320,25 @@ namespace MODELS.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Transmission");
+                });
+
+            modelBuilder.Entity("MODELS.DB.user", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email");
+
+                    b.Property<string>("Password");
+
+                    b.Property<int?>("RoleId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("users");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -494,6 +526,13 @@ namespace MODELS.Migrations
                     b.HasOne("MODELS.DB.ApplicationUser", "ApplicationUser")
                         .WithOne("RequiredInformation")
                         .HasForeignKey("MODELS.DB.RequiredInformation", "ApplicationUserId");
+                });
+
+            modelBuilder.Entity("MODELS.DB.user", b =>
+                {
+                    b.HasOne("MODELS.DB.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

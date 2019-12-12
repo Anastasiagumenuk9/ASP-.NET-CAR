@@ -44,9 +44,27 @@ namespace MODELS.DB
 
         public DbSet<Transmission> Transmission { get; set; }
 
+        public DbSet<user> users { get; set; }
+
+        public DbSet<Role> roles { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            //string adminRoleName = "admin";
+            //string userRoleName = "user";
+
+            //string adminEmail = "admin@mail.ru";
+            //string adminPassword = "123456";
+
+            //// добавляем роли
+            //role adminRole = new role { Id = 1, Name = adminRoleName };
+            //role userRole = new role { Id = 2, Name = userRoleName };
+            //user adminUser = new user { Id = 1, Email = adminEmail, Password = adminPassword, RoleId = adminRole.Id };
+
+            //builder.Entity<role>().HasData(new role[] { adminRole, userRole });
+            //builder.Entity<user>().HasData(new user[] { adminUser });
+          
             base.OnModelCreating(builder);
 
 
@@ -75,8 +93,9 @@ namespace MODELS.DB
             builder.Entity<RequiredInformation>().HasKey(i => i.Id);
          
             builder.Entity<Transmission>().HasKey(i => i.Id);
-           
-    
+
+            builder.Entity<Color>().HasKey(i => i.Id);
+
 
             //Connections
 
@@ -87,6 +106,11 @@ namespace MODELS.DB
         .HasOne(m => m.RequiredInformation)
         .WithOne(m => m.ApplicationUser)
         .HasForeignKey<RequiredInformation>(m => m.ApplicationUserId);
+
+            builder.Entity<Role>()
+         .HasMany(p => p.Users)
+         .WithOne(p => p.Role)
+         .HasForeignKey(s => s.RoleId);
 
 
             builder.Entity<Car>()
@@ -119,7 +143,7 @@ namespace MODELS.DB
         .WithOne(p => p.City)
         .HasForeignKey(s => s.CityId);
 
-           builder.Entity<Color>()
+         builder.Entity<Color>()
         .HasMany(p => p.Cars)
         .WithOne(p => p.Color)
         .HasForeignKey(s => s.ColorId);
