@@ -24,6 +24,9 @@ using MODELS.Interfaces;
 using DAL.Repositories;
 using AutoMapper;
 using BAL.Services;
+using BAL.Interfaces;
+using BAL.Managers;
+using BAL.Wrappers;
 
 namespace Application
 {
@@ -55,6 +58,12 @@ namespace Application
 
             services.AddTransient<IGenericRepository<user>, GenericRepository<user>>();
             services.AddTransient<IGenericRepository<Role>, GenericRepository<Role>>();
+            services.AddTransient<IGenericRepository<Car>, GenericRepository<Car>>();
+
+
+
+
+
 
             // установка конфигурации подключения
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -90,8 +99,8 @@ namespace Application
                 options.User.RequireUniqueEmail = true;
             });
 
-            services.AddMvc();
-
+            services.AddMvc().AddControllersAsServices();
+          
 
             var mappingConfig = new MapperConfiguration(mc =>
             {
@@ -105,6 +114,35 @@ namespace Application
             services.Configure<TokenManagement>(Configuration.GetSection("tokenManagement"));
             var token = Configuration.GetSection("tokenManagement").Get<TokenManagement>();
             var secret = Encoding.ASCII.GetBytes(token.Secret);
+
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+
+            services.AddScoped<IBlockedUserManager, BlockedUserManager>();
+            services.AddScoped<ICarManager, CarManager>();
+            services.AddScoped<IApplicationUserManager, ApplicationUserManager>();
+            services.AddScoped<ICarTypeManager, CarTypeManager>();
+            services.AddScoped<ICityManager, CityManager>();
+            services.AddScoped<IColorManager, ColorManager>();
+            services.AddScoped<ILocationManager, LocationManager>();
+            services.AddScoped<ILocationCarManager, LocationCarManager>();
+            services.AddScoped<IOrderManager, OrderManager>();
+            services.AddScoped<IPhotoCarManager, PhotoCarManager>();
+            services.AddScoped<IPhotoUserManager, PhotoUserManager>();
+            services.AddScoped<IRequiredInformationManager, RequiredInformationManager>();
+            services.AddScoped<IRoleManager, RoleManager>();
+            services.AddScoped<IUserManager, UserManager>();
+           
+            services.AddTransient<IImageWrapper, ImageWrapper>();
+      
+            // Start scheduler
+
+
+            // Configure sessions
+
+            services.AddDistributedMemoryCache();
+            services.AddSession();
 
             services.AddAuthentication(x =>
             {
@@ -152,11 +190,7 @@ namespace Application
           
             app.UseCookiePolicy();
 
-            app.UseReact(config =>
-            {
-              config
-             .SetLoadBabel(false)
-             .AddScriptWithoutTransform("~/assets/bundle.js");});
+           
             app.UseStaticFiles();
 
             app.UseMvc(routes =>

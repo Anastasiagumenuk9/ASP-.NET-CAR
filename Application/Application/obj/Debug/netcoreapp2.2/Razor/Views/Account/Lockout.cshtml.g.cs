@@ -18,8 +18,18 @@ using React.AspNet;
 
 #line default
 #line hidden
+#line 2 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\_ViewImports.cshtml"
+using MODELS;
+
+#line default
+#line hidden
+#line 3 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\_ViewImports.cshtml"
+using Application;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2ad087c85eb8f2a1808778377e9b269e8537efc3", @"/Views/Account/Lockout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"61d8edc1ed7b82dad2ddbfdedea183fcd8a36915", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3e5cacc961e8138efb1be044cb30d8ce846ca5be", @"/Views/_ViewImports.cshtml")]
     public class Views_Account_Lockout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

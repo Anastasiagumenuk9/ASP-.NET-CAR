@@ -5,6 +5,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using BAL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using MODELS.DB;
 using MODELS.ViewModels;
 
 namespace Application.Controllers
@@ -12,20 +13,14 @@ namespace Application.Controllers
    [Route("[controller]/[action]")]
     public class CarController : Controller
     {
-        private readonly ICarManager carManager;
-
-  
-
-
-
+        public ICarManager carManager;
+        public DataContext db = new DataContext();
         public CarController(ICarManager carManager)
         {
             this.carManager = carManager;
             
         }
 
-
-      
         [HttpPost]
         public IActionResult AddCar(CarViewModel item)
         {
@@ -92,12 +87,8 @@ namespace Application.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            if (User.IsInRole("Admin"))
-            {
-                return View(carManager.GetCars());
-            }
-           
-            return View();
+            var cars = carManager.GetCars();
+                return View(cars);
         }
 
 

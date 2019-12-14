@@ -271,14 +271,14 @@ namespace Application.Controllers
         }
 
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Logout()
-        //{
-        //    await _signInManager.SignOutAsync();
-        //    _logger.LogInformation("User logged out.");
-        //    return RedirectToAction(nameof(HomeController.Index), "Home");
-        //}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            _logger.LogInformation("User logged out.");
+            return RedirectToAction(nameof(AccountController.Register), "Account");
+        }
 
         [HttpPost]
         [AllowAnonymous]
@@ -547,7 +547,7 @@ namespace Application.Controllers
                 {
                     await Authenticate(user); // аутентификация
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("IndexAuthorize", "Home");
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }

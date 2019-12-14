@@ -1,0 +1,39 @@
+﻿@using MODELS.ViewModels
+@using MODELS.DB
+@using Application.Controllers
+@model IEnumerable<CarViewModel>
+@{
+    ViewBag.Title = "ShowCars";
+}
+
+<h2>ShowCars</h2>
+
+<div class="d-flex flex-wrap justify-content-center justify-content-sm-between pb-3">
+    <div class="d-flex flex-wrap">
+        <div class="form-inline flex-nowrap mr-3 mr-sm-4 pb-3">
+            <label class="text-nowrap mr-2 d-none d-sm-block" for="sorting">Сорутування:</label>
+            <select class="form-control custom-select" id="sorting">
+                <option>Популярні</option>
+                <option>По рейтингу</option>
+                <option>Від дешевих до дорогих</option>
+                <option>Від дорогих до дешевих</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5 mb-2">
+    @{
+        foreach (var car in Model)
+        {
+
+            <p>@car.Name</p>
+            <p>@car.Price</p>
+        }
+
+    }
+</div>
+
+
+
+

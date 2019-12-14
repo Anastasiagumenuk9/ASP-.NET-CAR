@@ -1,0 +1,19 @@
+﻿@using MODELS.ViewModels
+@using MODELS.DB
+@using Application.Controllers
+@model List<Car>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row mt-5 mb-2">
+    @{
+        foreach (var car in Model)
+        {
+
+            <p>@car.Name</p>
+            <p>@car.Price</p>
+        }
+
+    }
+</div>

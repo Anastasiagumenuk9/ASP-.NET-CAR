@@ -75,7 +75,6 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\net
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\LoginWith2fa.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgotPassword.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\NewLogin.cshtml.g.cs
-D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Layouts\LoginLayout.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ConfirmEmail.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccessDenied.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ExternalLogin.cshtml.g.cs
@@ -86,3 +85,9 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\net
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Account\ResetPasswordConfirmation.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\DAL.dll
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Shared\MenuLayout.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Home\IndexAuthorize.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Cabinet\Index.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Car\Index.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Car\ShowCars.cshtml.g.cs

@@ -16,6 +16,16 @@ using React.AspNet;
 
 #line default
 #line hidden
+#line 2 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\_ViewImports.cshtml"
+using MODELS;
+
+#line default
+#line hidden
+#line 3 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\_ViewImports.cshtml"
+using Application;
+
+#line default
+#line hidden
 #line 1 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
 using System.Linq;
 
@@ -47,11 +57,23 @@ using Microsoft.AspNetCore.Mvc;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a6aaf4634367cac384edca67a19d9856d447794", @"/Views/Account/NewLogin.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"61d8edc1ed7b82dad2ddbfdedea183fcd8a36915", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3e5cacc961e8138efb1be044cb30d8ce846ca5be", @"/Views/_ViewImports.cshtml")]
     public class Views_Account_NewLogin : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<LoginViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/style_login.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("form-control"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_3 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("email"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_4 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("placeholder", new global::Microsoft.AspNetCore.Html.HtmlString("Enter your login"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_5 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("agile-right"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_6 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("pass"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_7 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("placeholder", new global::Microsoft.AspNetCore.Html.HtmlString("Enter your password"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_8 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_9 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("agile_label"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_10 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("style", new global::Microsoft.AspNetCore.Html.HtmlString("color : red"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_11 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "ForgotPassword", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_12 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "NewRegister", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_13 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         #line hidden
         #pragma warning disable 0169
         private string __tagHelperStringValueBuffer;
@@ -73,6 +95,13 @@ using Microsoft.AspNetCore.Mvc;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -86,7 +115,7 @@ using Microsoft.AspNetCore.Mvc;
             WriteLiteral("\r\n<!DOCTYPE HTML>\r\n<html>\r\n\r\n");
             EndContext();
             BeginContext(314, 540, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d4477945224", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d44779410583", async() => {
                 BeginContext(320, 356, true);
                 WriteLiteral(@"
     <title>Log in</title>
@@ -105,7 +134,7 @@ using Microsoft.AspNetCore.Mvc;
     ");
                 EndContext();
                 BeginContext(676, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5a6aaf4634367cac384edca67a19d9856d4477945968", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5a6aaf4634367cac384edca67a19d9856d44779411328", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -139,55 +168,248 @@ using Microsoft.AspNetCore.Mvc;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(858, 2234, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d4477948228", async() => {
-                BeginContext(864, 140, true);
-                WriteLiteral("\r\n    <div class=\"back_image\"></div>\r\n    <div class=\"w3ls-login box box--big\">\r\n        <h1 class=\"title-page\">Sign In </h1>\r\n        <form");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d44779413589", async() => {
+                BeginContext(864, 135, true);
+                WriteLiteral("\r\n    <div class=\"back_image\"></div>\r\n    <div class=\"w3ls-login box box--big\">\r\n        <h1 class=\"title-page\">Sign In </h1>\r\n        ");
                 EndContext();
-                BeginWriteAttribute("asp-route-returnurl", " asp-route-returnurl=\"", 1004, "\"", 1048, 1);
-#line 40 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
-WriteAttributeValue("", 1026, ViewData["ReturnUrl"], 1026, 22, false);
+                BeginContext(999, 1964, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d44779414120", async() => {
+                    BeginContext(1064, 61, true);
+                    WriteLiteral("\r\n            <div class=\"agile-field-txt\">\r\n                ");
+                    EndContext();
+                    BeginContext(1125, 31, false);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d44779414588", async() => {
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper);
+#line 42 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.Email);
 
 #line default
 #line hidden
-                EndWriteAttribute();
-                BeginContext(1049, 1393, true);
-                WriteLiteral(@" method=""post"">
-            <div class=""agile-field-txt"">
-                <label asp-for=""Email""></label>
-                <input asp-for=""Email"" class=""form-control"" id=""email"" placeholder=""Enter your login"" />
-                <span asp-validation-for=""Email"" class=""agile-right""></span>
-            </div>
-            <div class=""agile-field-txt"">
-                <label asp-for=""Password""></label>
-                <input asp-for=""Password"" id=""pass"" class=""form-control"" placeholder=""Enter your password"" />
-                <span asp-validation-for=""Password"" class=""text-danger""></span>
-                <div asp-validation-summary=""All"" class=""agile_label"" style=""color : red""></div>
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    EndContext();
+                    BeginContext(1156, 18, true);
+                    WriteLiteral("\r\n                ");
+                    EndContext();
+                    BeginContext(1174, 88, false);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5a6aaf4634367cac384edca67a19d9856d44779416299", async() => {
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+#line 43 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.Email);
+
+#line default
+#line hidden
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_3);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_4);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    EndContext();
+                    BeginContext(1262, 18, true);
+                    WriteLiteral("\r\n                ");
+                    EndContext();
+                    BeginContext(1280, 60, false);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d44779418277", async() => {
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+#line 44 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.Email);
+
+#line default
+#line hidden
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_5);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    EndContext();
+                    BeginContext(1340, 81, true);
+                    WriteLiteral("\r\n            </div>\r\n            <div class=\"agile-field-txt\">\r\n                ");
+                    EndContext();
+                    BeginContext(1421, 34, false);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d44779420218", async() => {
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper);
+#line 47 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.Password);
+
+#line default
+#line hidden
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    EndContext();
+                    BeginContext(1455, 18, true);
+                    WriteLiteral("\r\n                ");
+                    EndContext();
+                    BeginContext(1473, 93, false);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5a6aaf4634367cac384edca67a19d9856d44779421932", async() => {
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+#line 48 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.Password);
+
+#line default
+#line hidden
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_6);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_7);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    EndContext();
+                    BeginContext(1566, 18, true);
+                    WriteLiteral("\r\n                ");
+                    EndContext();
+                    BeginContext(1584, 63, false);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d44779423913", async() => {
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+#line 49 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.Password);
+
+#line default
+#line hidden
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_8);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    EndContext();
+                    BeginContext(1647, 18, true);
+                    WriteLiteral("\r\n                ");
+                    EndContext();
+                    BeginContext(1665, 80, false);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d44779425788", async() => {
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper);
+#line 50 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSummary = global::Microsoft.AspNetCore.Mvc.Rendering.ValidationSummary.All;
+
+#line default
+#line hidden
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-summary", __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSummary, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_9);
+                    __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_10);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    EndContext();
+                    BeginContext(1745, 390, true);
+                    WriteLiteral(@"
             </div>
             <div class=""agile-field-txt"">
                 <div class=""agile_label"">
                     <input id=""check3"" name=""check3"" type=""checkbox"" value=""show password"" onclick=""ShowPassword()"">
                     <label class=""check"" for=""check3"">Show password</label>
                 </div>
- ");
-                WriteLiteral(@"               <div class=""agile-right"">
-                    <a asp-action=""ForgotPassword"">Forgot your password?</a>
-                </div>
-            </div>
-            <div class=""w3ls-bot"">
-                <div class=""switch-agileits"">
-                    <label class=""switch"">
-                        <input asp-for=""RememberMe"">
-                        ");
-                EndContext();
-                BeginContext(2443, 38, false);
+                <div class=""agile-right"">
+                    ");
+                    EndContext();
+                    BeginContext(2135, 56, false);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d44779428158", async() => {
+                        BeginContext(2166, 21, true);
+                        WriteLiteral("Forgot your password?");
+                        EndContext();
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_11.Value;
+                    __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_11);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    EndContext();
+                    BeginContext(2191, 197, true);
+                    WriteLiteral("\r\n                </div>\r\n            </div>\r\n            <div class=\"w3ls-bot\">\r\n                <div class=\"switch-agileits\">\r\n                    <label class=\"switch\">\r\n                        ");
+                    EndContext();
+                    BeginContext(2388, 28, false);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5a6aaf4634367cac384edca67a19d9856d44779429938", async() => {
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+#line 64 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
+__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvider.CreateModelExpression(ViewData, __model => __model.RememberMe);
+
+#line default
+#line hidden
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-for", __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    EndContext();
+                    BeginContext(2416, 26, true);
+                    WriteLiteral("\r\n                        ");
+                    EndContext();
+                    BeginContext(2443, 38, false);
 #line 65 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
                    Write(Html.DisplayNameFor(m => m.RememberMe));
 
 #line default
 #line hidden
-                EndContext();
-                BeginContext(2481, 383, true);
-                WriteLiteral(@"
+                    EndContext();
+                    BeginContext(2481, 356, true);
+                    WriteLiteral(@"
                         <span class=""slider round""></span>
                     </label>
                 </div>
@@ -198,17 +420,74 @@ WriteAttributeValue("", 1026, ViewData["ReturnUrl"], 1026, 22, false);
                 </p>
             </div>
             <div class=""agile-right"">
-                <a asp-action=""NewRegister""");
-                EndContext();
-                BeginWriteAttribute("asp-route-returnurl", " asp-route-returnurl=\"", 2864, "\"", 2908, 1);
+                ");
+                    EndContext();
+                    BeginContext(2837, 89, false);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a6aaf4634367cac384edca67a19d9856d44779432440", async() => {
+                        BeginContext(2910, 12, true);
+                        WriteLiteral("REGISTRATION");
+                        EndContext();
+                    }
+                    );
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
+                    __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_12.Value;
+                    __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_12);
+                    if (__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+                    {
+                        throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-returnurl", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+                    }
+                    BeginWriteTagHelperAttribute();
 #line 76 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
-WriteAttributeValue("", 2886, ViewData["ReturnUrl"], 2886, 22, false);
+                                                     WriteLiteral(ViewData["ReturnUrl"]);
 
 #line default
 #line hidden
-                EndWriteAttribute();
-                BeginContext(2909, 176, true);
-                WriteLiteral(">REGISTRATION</a>\r\n            </div>\r\n        </form>\r\n    </div>\r\n\r\n    <div class=\"copy-wthree\">\r\n        <p>\r\n            © 2019 | SMS-service\r\n        </p>\r\n    </div>\r\n\r\n");
+                    __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
+                    __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["returnurl"] = __tagHelperStringValueBuffer;
+                    __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-returnurl", __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["returnurl"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                    await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                    if (!__tagHelperExecutionContext.Output.IsContentModified)
+                    {
+                        await __tagHelperExecutionContext.SetOutputContentAsync();
+                    }
+                    Write(__tagHelperExecutionContext.Output);
+                    __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                    EndContext();
+                    BeginContext(2926, 30, true);
+                    WriteLiteral("\r\n            </div>\r\n        ");
+                    EndContext();
+                }
+                );
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+                if (__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues == null)
+                {
+                    throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-returnurl", "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper", "RouteValues"));
+                }
+                BeginWriteTagHelperAttribute();
+#line 40 "D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\Views\Account\NewLogin.cshtml"
+                       WriteLiteral(ViewData["ReturnUrl"]);
+
+#line default
+#line hidden
+                __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues["returnurl"] = __tagHelperStringValueBuffer;
+                __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-returnurl", __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues["returnurl"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_13.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_13);
+                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                if (!__tagHelperExecutionContext.Output.IsContentModified)
+                {
+                    await __tagHelperExecutionContext.SetOutputContentAsync();
+                }
+                Write(__tagHelperExecutionContext.Output);
+                __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                EndContext();
+                BeginContext(2963, 122, true);
+                WriteLiteral("\r\n    </div>\r\n\r\n    <div class=\"copy-wthree\">\r\n        <p>\r\n            © 2019 | SMS-service\r\n        </p>\r\n    </div>\r\n\r\n");
                 EndContext();
             }
             );
