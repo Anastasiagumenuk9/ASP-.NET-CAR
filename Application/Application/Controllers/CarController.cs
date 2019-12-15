@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using BAL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using MODELS.DB;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using MODELS.ViewModels;
 
 namespace Application.Controllers
@@ -14,16 +16,20 @@ namespace Application.Controllers
     public class CarController : Controller
     {
         public ICarManager carManager;
-        public DataContext db = new DataContext();
-        public CarController(ICarManager carManager)
+        public IPhotoCarManager photoCarManager;
+        public IColorManager colorManager;
+     
+        public CarController(ICarManager carManager, IColorManager colorManager)
         {
             this.carManager = carManager;
+            this.colorManager = colorManager;
             
         }
 
         [HttpPost]
         public IActionResult AddCar(CarViewModel item)
         {
+           
             carManager.Insert(item);
             return RedirectToAction("Index", "Car");
         }
@@ -112,6 +118,7 @@ namespace Application.Controllers
         public IActionResult ShowCars()
         {
             var cars = carManager.GetCars();
+           
             return View(cars);
         }
 
