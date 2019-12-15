@@ -91,3 +91,4 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\net
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Cabinet\Index.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Car\Index.cshtml.g.cs
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Car\ShowCars.cshtml.g.cs
+D:\3 курс\Net\Application\ASP-.NET-CAR\Application\Application\obj\Debug\netcoreapp2.2\Razor\Views\Shared\MyCabinetLayout.cshtml.g.cs
