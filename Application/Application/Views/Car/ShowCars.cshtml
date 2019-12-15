@@ -2,38 +2,87 @@
 @using MODELS.DB
 @using Application.Controllers
 @model IEnumerable<CarViewModel>
+
 @{
     ViewBag.Title = "ShowCars";
 }
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Cars</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <style>
+        .* {
+            margin: 0; /* Убираем отступы */
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div height="300">
 
-<h2>ShowCars</h2>
-
-<div class="d-flex flex-wrap justify-content-center justify-content-sm-between pb-3">
-    <div class="d-flex flex-wrap">
-        <div class="form-inline flex-nowrap mr-3 mr-sm-4 pb-3">
-            <label class="text-nowrap mr-2 d-none d-sm-block" for="sorting">Сорутування:</label>
-            <select class="form-control custom-select" id="sorting">
-                <option>Популярні</option>
-                <option>По рейтингу</option>
-                <option>Від дешевих до дорогих</option>
-                <option>Від дорогих до дешевих</option>
-            </select>
+    </div>
+    <p></p>
+    <p></p>
+    <div class="d-flex flex-wrap justify-content-center justify-content-sm-between pb-3">
+        <div class="d-flex flex-wrap">
+            <div class="form-inline flex-nowrap mr-3 mr-sm-4 pb-3">
+                <label class="text-nowrap mr-2 d-none d-sm-block" for="sorting">Сорутування:</label>
+                <select class="form-control custom-select" id="sorting">
+                    <option>Популярні</option>
+                    <option>По рейтингу</option>
+                    <option>Від дешевих до дорогих</option>
+                    <option>Від дорогих до дешевих</option>
+                </select>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="row mt-5 mb-2">
-    @{
-        foreach (var car in Model)
-        {
+    <div class="row mt-5 mb-2">
+        @{
+            foreach (var car in Model)
+            {
+                <table>
+                    <tr>
+                        <td>
+                            @Html.Raw("<img style='width:100px; height:60px;' src=\"data:image/jpeg;base64,"
+                                           + Convert.ToBase64String(car.Paint) + "\" />")
+                        </td>
+                        <td>  @car.Name  </td>
+                        <td>  @car.Price $  </td>
+                        <td>  @car.Transmission  </td>
+                        <td>  @car.Color  </td>
+                        <td>  @car.CarType  </td>
 
-            <p>@car.Name</p>
-            <p>@car.Price</p>
+                    </tr>
+                </table>
+
+            }
+
+
         }
+    </div>
+    <div class="d-flex flex-wrap justify-content-center justify-content-sm-between pb-3">
+        <div class="d-flex flex-wrap">
+            <div class="form-inline flex-nowrap mr-3 mr-sm-4 pb-3">
+                <label class="text-nowrap mr-2 d-none d-sm-block" for="sorting">Sort</label>
+                <select class="form-control custom-select" id="sorting">
+                    <option>Popular</option>
+                    <option>From Cheap to Expensive</option>
+                    <option>From Expensive to Cheap</option>
+                </select>
+            </div>
+        </div>
+    </div>
 
-    }
-</div>
 
 
-
+</body>
+<!-- END BODY -->
+</html>
 

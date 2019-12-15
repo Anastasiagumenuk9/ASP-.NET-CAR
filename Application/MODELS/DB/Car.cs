@@ -26,6 +26,8 @@ namespace MODELS.DB
 
         public int CarTypeId { get; set; }
 
+        public int PhotoCarId { get; set; }
+
         public int TransmissionId { get; set; }
 
         public Color Color { get; set; }
@@ -34,7 +36,7 @@ namespace MODELS.DB
 
         public Transmission Transmission { get; set; }
 
-        public ICollection<PhotoCar> PhotosCar { get; set; }
+        public PhotoCar PhotoCar { get; set; }
 
         public ICollection<LocationCar> LocationsCars { get; set; }
 

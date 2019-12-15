@@ -100,6 +100,8 @@ namespace MODELS.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
+                    b.Property<int>("PhotoCarId");
+
                     b.Property<int>("Price");
 
                     b.Property<int>("Run");
@@ -115,6 +117,8 @@ namespace MODELS.Migrations
                     b.HasIndex("CarTypeId");
 
                     b.HasIndex("ColorId");
+
+                    b.HasIndex("PhotoCarId");
 
                     b.HasIndex("TransmissionId");
 
@@ -231,15 +235,11 @@ namespace MODELS.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CarId");
-
                     b.Property<string>("Name");
 
                     b.Property<byte[]>("Paint");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CarId");
 
                     b.ToTable("PhotosCar");
                 });
@@ -463,6 +463,11 @@ namespace MODELS.Migrations
                         .HasForeignKey("ColorId")
                         .OnDelete(DeleteBehavior.Cascade);
 
+                    b.HasOne("MODELS.DB.PhotoCar", "PhotosCar")
+                        .WithMany("Cars")
+                        .HasForeignKey("PhotoCarId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("MODELS.DB.Transmission", "Transmission")
                         .WithMany("Cars")
                         .HasForeignKey("TransmissionId")
@@ -503,14 +508,6 @@ namespace MODELS.Migrations
                     b.HasOne("MODELS.DB.RequiredInformation", "RequiredInformation")
                         .WithMany()
                         .HasForeignKey("RequiredInformationId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("MODELS.DB.PhotoCar", b =>
-                {
-                    b.HasOne("MODELS.DB.Car", "Car")
-                        .WithMany("PhotosCar")
-                        .HasForeignKey("CarId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

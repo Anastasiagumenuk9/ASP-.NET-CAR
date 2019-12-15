@@ -16,6 +16,10 @@ namespace MODELS.DB
 
         public DateTime DataConfirmed { get; set; }
 
+        public int userId { get; set; }
+
+        public user user { get; set; }
+
         public string ApplicationUserId { get; set; }
 
         public ApplicationUser ApplicationUser { get; set; }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MODELS.DB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -29,10 +30,12 @@ namespace MODELS.ViewModels
 
         public bool Available { get; set; }
 
-        public int ColorId { get; set; }
+        public string Color { get; set; }
 
-        public int CarTypeId { get; set; }
+        public string CarType { get; set; }
 
-        public int TransmissionId { get; set; }
+        public string Transmission { get; set; }
+
+        public byte[] Paint { get; set; }
     }
 }

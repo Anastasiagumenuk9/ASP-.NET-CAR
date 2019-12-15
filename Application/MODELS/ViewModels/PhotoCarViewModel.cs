@@ -15,6 +15,5 @@ namespace MODELS.ViewModels
 
         public byte[] Paint { get; set; }
 
-        public int CarId { get; set; }
     }
 }

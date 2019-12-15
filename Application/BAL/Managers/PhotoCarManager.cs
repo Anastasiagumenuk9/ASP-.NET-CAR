@@ -36,7 +36,7 @@ namespace BAL.Managers
             {
                 image = new Bitmap(stream);
                 image = new Bitmap(image, 1000, 1000);
-                // .setResolution() doesnt work. Bug, possibly
+            
             }
             catch (ArgumentException)
             {
@@ -47,11 +47,11 @@ namespace BAL.Managers
                 return new DTOImages() { Success = false, Details = "Image can't be resized" };
             }
 
-            if (!fileIo.Exists("wwwroot/images/CommodityPhotos/"))
+            if (!fileIo.Exists("wwwroot/images/Photos/"))
             {
                 try
                 {
-                    fileIo.CreateDirectory("wwwroot/images/CommodityPhotos/");
+                    fileIo.CreateDirectory("wwwroot/images/Photos/");
                 }
                 catch (Exception)
                 {
@@ -61,7 +61,7 @@ namespace BAL.Managers
 
             try
             {
-                fileIo.SaveBitmap(image, "wwwroot/images/CommodityPhotos/Photo_Id=" + Convert.ToString(item.CarId) + ".png"
+                fileIo.SaveBitmap(image, "wwwroot/images/Photos/Photo_Id=" + Convert.ToString(item.CarId) + ".png"
                     , ImageFormat.Png);
             }
             catch (ArgumentNullException)

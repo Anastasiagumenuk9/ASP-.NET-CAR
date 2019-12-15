@@ -1,9 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
 
 namespace MODELS.ViewModels
 {
-    public class RegisterViewModel
+    public class MyCabinetViewModel
     {
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
@@ -20,11 +24,6 @@ namespace MODELS.ViewModels
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
-
-        [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-        public string ConfirmPassword { get; set; }
 
         [Display(Name = "Corporation")]
         public bool CorporateUser { get; set; } //if selected User Role will be CorporateUser

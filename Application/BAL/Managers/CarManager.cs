@@ -38,7 +38,7 @@ namespace BAL.Managers
 
         public IEnumerable<CarViewModel> GetCars() 
         {
-           IEnumerable<Car> cars = unitOfWork.Cars.GetAll();
+            IEnumerable<Car> cars = unitOfWork.Cars.Get(null,null,"Transmission,Color,CarType,PhotoCar");
             return mapper.Map<IEnumerable<Car>, List<CarViewModel>>(cars);
         }
 

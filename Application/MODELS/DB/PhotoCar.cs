@@ -12,8 +12,8 @@ namespace MODELS.DB
 
         public byte[] Paint { get; set; }
 
-        public Car Car { get; set; }
+        public ICollection<Car> Cars { get; set; }
 
-        public int CarId { get; set; }
+      
     }
 }

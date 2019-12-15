@@ -12,9 +12,19 @@ namespace BAL.Services
     {
         public MappingProfile()
         {
-           
 
-            CreateMap<Car, CarViewModel>().ReverseMap();
+
+            CreateMap<Car, CarViewModel>()
+                .ForMember(c => c.Transmission, bmod => bmod.MapFrom(src => src.Transmission.Name))
+                .ForMember(c => c.Color, bmod => bmod.MapFrom(src => src.Color.Name))
+                .ForMember(c => c.CarType, bmod => bmod.MapFrom(src => src.CarType.Name))
+                .ForMember(c => c.Name, bmod => bmod.MapFrom(src => src.Name))
+                .ForMember(c => c.Price, bmod => bmod.MapFrom(src => src.Price))
+                .ForMember(c => c.Paint, bmod => bmod.MapFrom(src => src.PhotoCar.Paint));
+
+
+
+           
 
             CreateMap<BlockedUser, BlockedUserViewModel>().ReverseMap();
 

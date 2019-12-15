@@ -94,7 +94,7 @@ namespace MODELS.DB
          
             builder.Entity<Transmission>().HasKey(i => i.Id);
 
-            builder.Entity<Color>().HasKey(i => i.Id);
+            builder.Entity<user>().HasKey(i => i.Id);
 
 
             //Connections
@@ -113,10 +113,10 @@ namespace MODELS.DB
          .HasForeignKey(s => s.RoleId);
 
 
-            builder.Entity<Car>()
-        .HasMany(p => p.PhotosCar)
-        .WithOne(p => p.Car)
-        .HasForeignKey(s => s.CarId);
+            builder.Entity<PhotoCar>()
+        .HasMany(p => p.Cars)
+        .WithOne(p => p.PhotoCar)
+        .HasForeignKey(s => s.PhotoCarId);
 
            builder.Entity<Car>()
         .HasMany(p => p.LocationsCars)
