@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BAL.Interfaces;
+using Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http;
 using MODELS.DB;
 using MODELS.Interfaces;
 using MODELS.ViewModels;
@@ -12,6 +13,8 @@ namespace BAL.Managers
 {
     public class CarManager : GenericManager , ICarManager
     {
+        public string exceptionMessage;
+
         public CarManager(IUnitOfWork unitOfWork, IMapper mapper) : base(unitOfWork, mapper)
         {
 
@@ -21,13 +24,17 @@ namespace BAL.Managers
         {
             Car car = unitOfWork.Cars.GetById(id);
 
-            if(car != null)
+            if(car == null)
+            {
+                throw new ArgumentNullException("Car not exists!");
+            }
+            else
             {
                 unitOfWork.Cars.Delete(car);
+                unitOfWork.Save();
             }
-        
-            unitOfWork.Save();
 
+           
         }
 
         public CarViewModel GetById(int id)
@@ -38,7 +45,7 @@ namespace BAL.Managers
 
         public IEnumerable<CarViewModel> GetCars() 
         {
-            IEnumerable<Car> cars = unitOfWork.Cars.Get(null,null,"Transmission,Color,CarType,PhotoCar");
+            IEnumerable<Car> cars = unitOfWork.Cars.GetAll();
             return mapper.Map<IEnumerable<Car>, List<CarViewModel>>(cars);
         }
 
@@ -49,7 +56,7 @@ namespace BAL.Managers
                 .Get(c => c.Name.Contains(searchValue) || c.Name.Contains(searchValue))
                 .Skip((page - 1) * countOnPage).Take(countOnPage);
 
-            return mapper.Map<IEnumerable<Car>, IEnumerable<CarViewModel>>(cars);
+            return mapper.Map<IEnumerable<Car>, List<CarViewModel>>(cars);
         }
 
         //filter
@@ -57,7 +64,6 @@ namespace BAL.Managers
         {
             IEnumerable<Car> cars = unitOfWork.Cars.Get(c => c.ColorId == color);
             return mapper.Map<IEnumerable<Car>, List<CarViewModel>>(cars);
-
         }
 
         //filter

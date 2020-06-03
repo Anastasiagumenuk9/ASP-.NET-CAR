@@ -15,6 +15,7 @@ namespace BAL.Services
 
 
             CreateMap<Car, CarViewModel>()
+                .ForMember(c => c.Id, bmod => bmod.MapFrom(src => src.Id))
                 .ForMember(c => c.Transmission, bmod => bmod.MapFrom(src => src.Transmission.Name))
                 .ForMember(c => c.Color, bmod => bmod.MapFrom(src => src.Color.Name))
                 .ForMember(c => c.CarType, bmod => bmod.MapFrom(src => src.CarType.Name))

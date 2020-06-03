@@ -17,13 +17,13 @@ namespace Application.Controllers
     {
         public ICarManager carManager;
         public IPhotoCarManager photoCarManager;
-        public IColorManager colorManager;
      
-        public CarController(ICarManager carManager, IColorManager colorManager)
+     
+        
+        public CarController(ICarManager carManager)
         {
             this.carManager = carManager;
-            this.colorManager = colorManager;
-            
+       
         }
 
         [HttpPost]
@@ -34,18 +34,13 @@ namespace Application.Controllers
             return RedirectToAction("Index", "Car");
         }
 
-
-
-
        
-        [HttpGet]
+        [HttpPost]
         public IActionResult DeleteConfirmed(int carId)
         {
-
             carManager.Delete(carId);
             return RedirectToAction("Index", "Car");
         }
-
 
       
         [HttpPost]
@@ -129,8 +124,6 @@ namespace Application.Controllers
             var car = carManager.GetById(carId);
             return View(car);
         }
-
-
 
     }
 }

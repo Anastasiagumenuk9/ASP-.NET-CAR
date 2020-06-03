@@ -26,3 +26,20 @@ D:\3 курс\Net\Application\ASP-.NET-CAR\Application\DAL\obj\Debug\netcoreapp2
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\x64\ChakraCore.dll
 D:\3 курс\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\x86\ChakraCore.dll
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\x86\ChakraCore.dll
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\x64\ChakraCore.dll
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\DAL.runtimeconfig.json
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\DAL.runtimeconfig.dev.json
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\MODELS.dll
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\bin\Debug\netcoreapp2.2\MODELS.pdb
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+D:\3 курс\1 семестр\Net\Application\ASP-.NET-CAR\Application\DAL\obj\Debug\netcoreapp2.2\DAL.genruntimeconfig.cache

@@ -61,10 +61,6 @@ namespace Application
             services.AddTransient<IGenericRepository<Car>, GenericRepository<Car>>();
 
 
-
-
-
-
             // установка конфигурации подключения
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                .AddCookie(options =>

@@ -158,11 +158,12 @@ namespace MODELS.DB
         .WithOne(p => p.Transmission)
         .HasForeignKey(s => s.TransmissionId);
 
-       
 
             builder.Entity<Car>()
         .Property(c => c.Name)
         .IsRequired();
+
+       
 
         }
 

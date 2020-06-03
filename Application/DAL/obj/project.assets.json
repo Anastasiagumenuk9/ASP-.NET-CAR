@@ -12584,24 +12584,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anast\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\3 курс\\1 семестр\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\anast\\.nuget\\packages\\",
-      "outputPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\obj\\",
+      "projectPath": "D:\\3 курс\\1 семестр\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\3 курс\\1 семестр\\Net\\Application\\ASP-.NET-CAR\\Application\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\anast\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -12613,8 +12614,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj": {
-              "projectPath": "D:\\3 курс\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj"
+            "D:\\3 курс\\1 семестр\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj": {
+              "projectPath": "D:\\3 курс\\1 семестр\\Net\\Application\\ASP-.NET-CAR\\Application\\MODELS\\MODELS.csproj"
             }
           }
         }
@@ -12691,7 +12692,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
