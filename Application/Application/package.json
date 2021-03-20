@@ -167,7 +167,7 @@
     "is-plain-obj": "^1.1.0",
     "is-plain-object": "^2.0.4",
     "is-stream": "^1.1.0",
-    "is-svg": "^2.1.0",
+    "is-svg": "^4.2.2",
     "is-windows": "^1.0.2",
     "isarray": "^0.0.1",
     "isexe": "^2.0.0",
