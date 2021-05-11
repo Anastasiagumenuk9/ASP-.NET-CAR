@@ -139,7 +139,7 @@
     "hmac-drbg": "^1.0.1",
     "hoist-non-react-statics": "^3.3.1",
     "home-or-tmp": "^2.0.0",
-    "hosted-git-info": "^2.8.5",
+    "hosted-git-info": "^2.8.9",
     "html-comment-regex": "^1.1.2",
     "https-browserify": "^1.0.0",
     "iconv-lite": "^0.4.24",
