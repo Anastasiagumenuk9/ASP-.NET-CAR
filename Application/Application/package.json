@@ -126,7 +126,7 @@
     "get-caller-file": "^1.0.3",
     "get-stream": "^3.0.0",
     "get-value": "^2.0.6",
-    "glob-parent": "^3.1.0",
+    "glob-parent": "^5.1.2",
     "globals": "^9.18.0",
     "graceful-fs": "^4.2.3",
     "has": "^1.0.3",
